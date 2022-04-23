@@ -1,0 +1,124 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a post layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% if content %}
+  <div{{ attributes }}>
+
+    {% block article %}
+      <article>
+
+
+        {# == Media & Header == #}
+        {# ==================== #}
+
+        {% block article_header_wrapper %}
+          <div class="article-header-wrapper align-items-center js-article-header-wrapper">
+
+            {# == Article media == #}
+            {% block article_media %}
+              <div{{ region_attributes.article_media }}>
+                {{ content.article_media }}
+              </div>
+            {% endblock %}
+
+            {# == Article header == #}
+            {% block article_header %}
+              <header class="container article-header">
+                <div class="row align-items-center">
+                  <div{{ region_attributes.article_header.addClass('col-12', 'col-lg-8', 'pr-lg-5') }}>
+                    {{ content.article_header }}
+                  </div>
+                  <div{{ region_attributes.article_header_second.addClass('col-12', 'col-lg-4', 'mt-4', 'mt-lg-0') }} >
+                    {{ content.article_header_second }}
+                  </div>
+                </div>
+              </header>
+            {% endblock %}
+          </div>
+        {% endblock %}
+
+
+        {# == Content top == #}
+        {# ================= #}
+
+        {% block content_top %}
+          {% if content.top %}
+            <div class="content-top-wrapper">
+              <div class="container">
+                <div class="row">
+                  <div{{ region_attributes.top.addClass('col-12') }}>
+                    {{ content.top }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endblock %}
+
+
+        {# == Article content == #}
+        {# ====================== #}
+
+        {% block article_content %}
+          <div class="article-content-wrapper">
+            <div class="container">
+              <div class="row">
+                <div{{ region_attributes.article_content.addClass('col-12 col-lg-8 mx-auto') }}>
+                  {{ content.article_content }}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endblock %}
+
+      </article>
+    {% endblock %}
+
+
+    {# == Content bottom == #}
+    {# ==================== #}
+
+    {% block content_bottom %}
+      {% if content.bottom %}
+        <div class="content-bottom-wrapper">
+          <div class="container">
+            <div class="row">
+              <div{{ region_attributes.bottom.addClass('col-12') }}>
+                {{ content.bottom }}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endblock %}
+
+
+    {# == Article comments == #}
+    {# ====================== #}
+
+    {% block article_comments %}
+      {% if content.article_comments %}
+        <div class="comments-wrapper">
+          <div class="container">
+            <div class="row">
+              <div{{ region_attributes.article_comments.addClass('col-12', 'col-lg-8', 'mx-lg-auto', 'py-8') }}>
+                {{ content.article_comments }}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endblock %}
+
+  </div>
+{% endif %}

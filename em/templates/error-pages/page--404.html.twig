@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Error 404 page.
+ */
+#}
+
+{{ attach_library('em/error-pages') }}
+
+<div class="d-flex align-items-center vh-100">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 mx-auto">
+
+        <div class="error-message-wrapper">
+          <div class="text-center">
+
+            <h1>
+              <div class="error-code d-inline-block mb-3 mb-md-0">404</div>
+              <div class="d-md-inline-block">{{ page['#title'] }}</div>
+            </h1>
+            {{ page.content }}
+            <a href="{{ front_page }}" class="button mt-4">Back to Home</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>{# /.layout-container #}
+
+</div>

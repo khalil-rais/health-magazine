@@ -1,0 +1,63 @@
+{#
+/**
+ * @file
+ * Teaser Style: Compact Card
+ */
+#}
+
+{%
+  set article_classes =
+  [
+    'teaser',
+    'teaser--compact',
+    node.teaser_highlighted.getString() ? 'is--highlighted',
+  ]
+%}
+
+{%
+  set inline_style ='background-image:url('~ content.field_teaser_media[0]['field_image'][0]['#markup'] ~');
+                background-position: center;
+                background-size: cover;'
+%}
+
+{# Teaser Markup #}
+{# ============= #}
+<article{{ attributes.addClass(article_classes).setAttribute('style', inline_style) }}>
+  <a class="teaser__link" href="{{ url }}"></a>
+
+  {% if pd.article.media_contained.html %}
+    <div class="teaser__media-icons">
+      {{ pd.article.media_contained.html|raw }}
+    </div>
+  {% endif %}
+
+  <div{{ content_attributes.addClass('teaser__content') }}>
+
+    {# == Teaser title == #}
+    {# ================== #}
+    <header>
+      {% if content.field_channel.0 %}
+        <div class="channel channel--bordered teaser__channel">
+          {{ content.field_channel }}
+        </div>
+      {% endif %}
+
+      <h2 class="teaser__headline">
+        <a href="{{ url }}">{{ label }}</a>
+      </h2>
+    </header>
+
+    {# == Meta (author info) == #}
+    {# ======================== #}
+    <footer class="teaser__authored">
+      {% if pd.teaser.show_post_date %}
+        <span class="date">{{ date }}</span>
+      {% endif %}
+
+      {% if pd.teaser.show_author_info %}
+        , <span class="author">{{ 'by'|t }} {{ author_name }}</span>
+      {% endif %}
+    </footer>
+
+  </div>
+</article>

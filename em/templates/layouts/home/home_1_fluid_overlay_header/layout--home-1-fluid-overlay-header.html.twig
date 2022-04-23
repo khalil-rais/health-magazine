@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Default theme implementation for layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% extends "@em/layouts/home/home_1_fluid/layout--home-1-fluid.html.twig" %}
+
+
+  {# == Region: Featured == #}
+  {# ====================== #}
+
+  {% block region_featured %}
+    {% if(content.featured) %}
+      <div{{ region_attributes.featured.addClass('.js-page-featured-wrapper') }}>
+        {{ content.featured }}
+      </div>
+    {% endif %}
+  {% endblock %}

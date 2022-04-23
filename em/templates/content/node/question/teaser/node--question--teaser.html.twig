@@ -1,0 +1,77 @@
+{#
+/**
+ * @file
+ * Teaser Style: Card
+ */
+#}
+
+{%
+  set article_classes =
+  [
+    'teaser',
+    'teaser--card',
+    'teaser--bordered',
+    node.teaser_highlighted.getString() ? 'is--highlighted',
+  ]
+%}
+
+
+{# Teaser Markup #}
+{# ============= #}
+<article{{ attributes.addClass(article_classes) }}>
+
+  {# == Media == #}
+  {# =========== #}
+  <div class="teaser__media">
+    <div class="relative">
+      {% if content.field_channel.0 %}
+        <!--<div class="channel channel--boxed teaser__channel">
+          {{ content.field_channel }}
+        </div>-->
+      {% endif %}
+      <div class="image teaser__image">
+        <a href="{{ url }}">
+          {{ content.field_answer_images[0] }}
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div{{ content_attributes.addClass('teaser__content') }}>
+
+    <header>
+      {# == Teaser title == #}
+      {# ================== #}
+      <h2 class="teaser__headline">
+        <a href="{{ url }}">{{ label }}</a>
+      </h2>
+    </header>
+
+    {# == Meta (author info) == #}
+    {# ======================== #}
+    <footer class="teaser__authored">
+      {% if pd.teaser.show_post_date %}
+        <span class="date">{{ date }}</span>
+      {% endif %}
+
+      {% if pd.teaser.show_author_info %}
+        , <span class="author">{{ 'by'|t }} {{ author_name }}</span>
+      {% endif %}
+    </footer>
+
+    {# == Teaser text (content) == #}
+    {# =========================== #}
+    <div class="teaser__body">
+      {{ content|without('field_answer_images', 'field_question_category') }}
+    </div>
+
+    {# == Read more link == #}
+    {# ==================== #}
+    <div class="teaser__link">
+      <a href="{{ url }}">
+        {{ 'Read more'|t }} <i class="fa fa-caret-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+
+</article>

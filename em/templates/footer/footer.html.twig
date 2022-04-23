@@ -1,0 +1,25 @@
+<footer class="page-footer">
+
+  <div class="page-footer__top-wrapper">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-8 mx-auto">
+          {% include '@em/components/logo.html.twig' %}
+          {% include '@em/components/social-media-pages.html.twig' %}
+          {{ page.footer_top }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer__bottom-wrapper">
+    <div class="container">
+      <div class="row justify-content-md-between align-items-center">
+        <div class="col-12 small py-3">
+          {{ page.footer_bottom }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>

@@ -1,0 +1,54 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a post layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% extends "@em/layouts/article/article_layout_1/layout--article-layout-1.html.twig" %}
+
+
+{# Remove comments section #}
+{% block article_comments %}
+{% endblock %}
+
+
+{# == Article content == #}
+{# ====================== #}
+
+{# Overriding article content block #}
+{% block article_content %}
+  <div class="article-content-wrapper">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 col-lg-8 mx-lg-auto">
+          {% if content.article_content %}
+            <div{{ region_attributes.article_content }}>
+              {{ content.article_content }}
+            </div>
+          {% endif %}
+
+          {% if content.article_comments %}
+            <div{{ region_attributes.article_comments }} >
+              {{ content.article_comments }}
+            </div>
+          {% endif %}
+        </div>
+
+        <aside class="sidebar col-12 col-lg-4 mt-5 mt-lg-0 js-sticky-elements">
+          <div{{ region_attributes.right_sidebar }}>
+            {{ content.right_sidebar }}
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </div>
+{% endblock %}

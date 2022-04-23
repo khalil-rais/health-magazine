@@ -1,0 +1,189 @@
+{#
+/**
+ * @file
+ * Default theme implementation for layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+
+<div{{ attributes }}>
+
+
+  {# == Region: Featured == #}
+  {# ====================== #}
+
+  {% block region_featured %}
+    {% if(content.featured) %}
+      <div{{ region_attributes.featured }}>
+        {{ content.featured }}
+      </div>
+    {% endif %}
+  {% endblock %}
+
+
+
+  {# == Region: Top == #}
+  {# ================= #}
+
+  {% if content.top %}
+    <div class="layout-region-wrapper--top">
+      {% block region_top %}
+        <div class="container-fluid">
+          <div class="row">
+            <div{{ region_attributes.top.addClass('col-12') }}>
+              {{ content.top }}
+            </div>
+          </div>
+        </div>
+      {% endblock %}
+    </div>
+  {% endif %}
+
+
+
+  {# == Region: Top Below == #}
+  {# ======================= #}
+
+  {% if content.top_below_first or content.top_below_second or content.top_below_third %}
+    <div class="layout-region-wrapper--top-below">
+      {% block region_top_below %}
+        <div class="container-fluid">
+          <div class="row">
+            <div{{ region_attributes.top_below_first.addClass('col-12', 'col-lg-4') }}>
+              {{ content.top_below_first }}
+            </div>
+            <div{{ region_attributes.top_below_second.addClass('col-12', 'col-lg-4') }}>
+              {{ content.top_below_second }}
+            </div>
+            <div{{ region_attributes.top_below_third.addClass('col-12', 'col-lg-4') }}>
+              {{ content.top_below_third }}
+            </div>
+          </div>
+        </div>
+      {% endblock %}
+    </div>
+  {% endif %}
+  
+
+
+  {# == Region: Above middle  == #}
+  {# =========================== #}
+
+  {# Setting up attributes #}
+  {% set maf_classes = ['col-12', 'col-xl-8'] %}
+  {% set mas_classes = ['col-12', 'col-xl-4'] %}
+
+  {% if content.middle_above_first or content.middle_above_second %}
+    <div class="layout-region-wrapper--middle-above">
+      {% block region_above_midle %}
+        <div class="container-fluid">
+          <div class="row">
+            <div{{ region_attributes.middle_above_first.addClass(maf_classes) }}>
+              {{ content.middle_above_first }}
+            </div>
+            <div{{ region_attributes.middle_above_second.addClass(mas_classes).setAttribute('data-sticky-elements', true) }}>
+              {{ content.middle_above_second }}
+            </div>
+          </div>
+        </div>
+      {% endblock %}
+    </div>
+  {% endif %}
+
+
+
+  {# == Region: Middle == #}
+  {# ==================== #}
+
+  {% if content.middle %}
+    <div class="layout-region-wrapper--middle">
+      {% block region_middle %}
+        <div class="container-fluid">
+          <div class="row">
+            <div{{ region_attributes.middle.addClass('col-12') }}>
+              {{ content.middle }}
+            </div>
+          </div>
+        </div>
+      {% endblock %}
+    </div>
+  {% endif %}
+
+
+
+  {# == Region: Middle Below == #}
+  {# ========================== #}
+
+  {% if content.middle_below_first or content.middle_below_second or content.middle_below_third %}
+    <div class="layout-region-wrapper--middle-below">
+      {% block region_middle_below %}
+        <div class="container-fluid">
+          <div class="row">
+            <div{{ region_attributes.middle_below_first.addClass('col-12', 'col-lg-4') }}>
+              {{ content.middle_below_first }}
+            </div>
+            <div{{ region_attributes.middle_below_second.addClass('col-12', 'col-lg-4') }}>
+              {{ content.middle_below_second }}
+            </div>
+            <div{{ region_attributes.middle_below_third.addClass('col-12', 'col-lg-4') }}>
+              {{ content.middle_below_third }}
+            </div>
+          </div>
+        </div>
+      {% endblock %}
+    </div>
+  {% endif %}
+
+
+
+  {# == Region: Above bottom == #}
+  {# =========================== #}
+
+  {# Setting up attributes #}
+  {% set baf_classes = ['col-12', 'col-xl-8'] %}
+  {% set bas_classes = ['col-12', 'col-xl-4'] %}
+
+  {% if content.bottom_above_first or content.bottom_above_second %}
+    <div class="layout-region-wrapper--bottom-above">
+      {% block region_bottom_above %}
+        <div class="container-fluid">
+          <div class="row">
+            <div{{ region_attributes.bottom_above_first.addClass(baf_classes) }}>
+              {{ content.bottom_above_first }}
+            </div>
+            <div{{ region_attributes.bottom_above_second.addClass(bas_classes).setAttribute('data-sticky-elements', true) }} >
+              {{ content.bottom_above_second }}
+            </div>
+          </div>
+        </div>
+      {% endblock %}
+    </div>
+  {% endif %}
+
+
+
+  {# == Region: Bottom == #}
+  {# ==================== #}
+
+  {% if content.bottom %}
+    <div class="layout-region-wrapper--bottom">
+      {% block region_bottom %}
+        <div class="container-fluid">
+          <div class="row">
+            <div{{ region_attributes.bottom.addClass('col-12') }}>
+              {{ content.bottom }}
+            </div>
+          </div>
+        </div>
+      {% endblock %}
+    </div>
+  {% endif %}
+
+
+</div>

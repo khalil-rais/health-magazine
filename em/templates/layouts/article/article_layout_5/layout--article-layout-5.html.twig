@@ -1,0 +1,45 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a post layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% extends "@em/layouts/article/article_layout_1/layout--article-layout-1.html.twig" %}
+
+
+{# == Content top == #}
+{% block content_top %}
+{% endblock %}
+
+
+{# == Article header == #}
+{% block article_header %}
+
+  {% if content.top %}
+    <div class="content-top-wrapper">
+      <div class="container">
+        <div class="row">
+          <div{{ region_attributes.top.addClass('col-12') }}>
+            {{ content.top }}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  <header class="container article-header">
+    <div class="row align-items-center">
+      <div{{ region_attributes.article_header.addClass('col-12', 'col-lg-8', 'm-lg-auto') }}>
+        {{ content.article_header }}
+      </div>
+    </div>
+  </header>
+
+{% endblock %}

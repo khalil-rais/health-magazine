@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a post layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% extends "@em/layouts/article/article_layout_1/layout--article-layout-1.html.twig" %}
+
+{# == Article header == #}
+{% block article_header %}
+  <header class="container article-header">
+    <div class="row align-items-center">
+      <div{{ region_attributes.article_header.addClass('col-12', 'col-lg-10', 'm-lg-auto') }}>
+        {{ content.article_header }}
+      </div>
+    </div>
+  </header>
+
+  <a href="#region--article-content" class="scroll-to-read js-smooth-scroll">
+    <i class="fas fa-angle-double-down"></i>
+  </a>
+
+{% endblock %}

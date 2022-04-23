@@ -1,0 +1,281 @@
+{#
+/**
+ * @file
+ * Theme override to display a node.
+ *
+ * Available variables:
+ * - node: The node entity with limited access to object properties and methods.
+     Only "getter" methods (method names starting with "get", "has", or "is")
+     and a few common methods such as "id" and "label" are available. Calling
+     other methods (such as node.delete) will result in an exception.
+ * - label: The title of the node.
+ * - content: All node items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - author_picture: The node author user entity, rendered using the "compact"
+ *   view mode.
+ * - metadata: Metadata for this node.
+ * - date: Themed creation date field.
+ * - author_name: Themed author name field.
+ * - url: Direct URL of the current node.
+ * - display_submitted: Whether submission information should be displayed.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - node: The current template type (also known as a "theming hook").
+ *   - node--type-[type]: The current node type. For example, if the node is an
+ *     "Article" it would result in "node--type-article". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - node--view-mode-[view_mode]: The View Mode of the node; for example, a
+ *     teaser would result in: "node--view-mode-teaser", and
+ *     full: "node--view-mode-full".
+ *   The following are controlled through the node publishing options.
+ *   - node--promoted: Appears on nodes promoted to the front page.
+ *   - node--sticky: Appears on nodes ordered above other non-sticky nodes in
+ *     teaser listings.
+ *   - node--unpublished: Appears on unpublished nodes visible only to site
+ *     admins.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main
+ *   content tag that appears in the template.
+ * - author_attributes: Same as attributes, except applied to the author of
+ *   the node tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ * - view_mode: View mode; for example, "teaser" or "full".
+ * - teaser: Flag for the teaser state. Will be true if view_mode is 'teaser'.
+ * - page: Flag for the full page state. Will be true if view_mode is 'full'.
+ * - readmore: Flag for more state. Will be true if the teaser content of the
+ *   node cannot hold the main body content.
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_node()
+ *
+ * @todo Remove the id attribute (or make it a class), because if that gets
+ *   rendered twice on a page this is invalid CSS for example: two lists
+ *   in different view modes.
+ */
+#}
+{%
+  set classes = [
+    node.bundle|clean_class,
+    node.isPromoted() ? 'is-promoted',
+    node.isSticky() ? 'is-sticky',
+    not node.isPublished() ? 'is-unpublished',
+    view_mode ? view_mode|clean_class,
+    'clearfix',
+  ]
+%}
+{% set replace_value_var= 'Yes' %}
+{% set replace_with_value_var = '' %} 
+<article{{ attributes.addClass(classes) }}>
+
+  {{ title_prefix }}
+  {% if not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% if display_submitted %}
+    <footer>
+      {{ author_picture }}
+      <div{{ author_attributes.addClass('author') }}>
+        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        {{ metadata }}
+      </div>
+    </footer>
+  {% endif %}
+
+
+	<div{{ content_attributes.addClass('content') }}>
+		<div class="question-data">
+			<div class="row">
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="item">
+								{{ content.field_country }}        
+							</div>
+						</div>	
+					</div>		
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="item">
+								{{ content.field_age }}                 
+							</div>
+						</div>	
+					</div>							
+					<div class="row">
+						<div class="col-sm-12">		
+							<div class="item ">  
+								{{ content.field_gender }}
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							{% if node.field_perform_any_surgery_eyes.value == "Yes" %}
+							<div class="item sub-question">
+								<div class="field field--name-field-perform-any-surgery-eyes field--type-list-string field--label-above">
+									<div class="field__label">{{ node.field_perform_any_surgery_eyes.fieldDefinition.label }}</div>
+									<div class="field__item">{{ content.field_surgery_explanation[0] }}</div>
+								</div>
+							</div>
+							{% else %}
+							<div class="item sub-question">{{ content.field_perform_any_surgery_eyes }}</div>
+							{% endif %}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							{% if node.field_suffer_pre_existing_in_eye.value == "Yes" %}
+							<div class="item sub-question">
+								<div class="field field--name-field-perform-any-surgery-eyes field--type-list-string field--label-above">
+									<div class="field__label">{{ node.field_suffer_pre_existing_in_eye.fieldDefinition.label }}</div>
+									<div class="field__item">{{ content.field_pre_existing_illness_expla[0] }}</div>
+								</div>
+							</div>
+							{% else %}
+							<div class="item sub-question">{{ content.field_suffer_pre_existing_in_eye }}</div>
+							{% endif %}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							{% if node.field_do_you_suffer_from_any_dis.value == "Yes" %}
+							<div class="item sub-question">
+								<div class="field field--name-field-perform-any-surgery-eyes field--type-list-string field--label-above">
+									<div class="field__label">{{ node.field_do_you_suffer_from_any_dis.fieldDefinition.label }}</div>
+									<div class="field__item">{{ content.field_previous_disease_explanati[0] }}</div>
+								</div>
+							</div>
+							{% else %}
+							<div class="item sub-question">{{ content.field_do_you_suffer_from_any_dis }}</div>
+							{% endif %}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							{% if node.field_do_you_use_any_eye_drops.value == "Yes" %}
+							<div class="item sub-question">
+								<div class="field field--name-field-perform-any-surgery-eyes field--type-list-string field--label-above">
+									<div class="field__label">{{ node.field_do_you_use_any_eye_drops.fieldDefinition.label }}</div>
+									<div class="field__item">{{ content.field_eyedrops_explanation[0] }}</div>
+								</div>
+							</div>
+							{% else %}
+							<div class="item sub-question">{{ content.field_do_you_use_any_eye_drops }}</div>
+							{% endif %}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							{% if node.field_you_wear_lenses_or_glasses.value == "Yes" %}
+							<div class="item sub-question">
+								<div class="field field--name-field-perform-any-surgery-eyes field--type-list-string field--label-above">
+									<div class="field__label">{{ node.field_you_wear_lenses_or_glasses.fieldDefinition.label }}</div>
+									<div class="field__item">{{ content.field_lens_glasses_explanation[0] }}</div>
+								</div>
+							</div>
+							{% else %}
+							<div class="item sub-question">{{ content.field_do_you_use_any_eye_drops }}</div>
+							{% endif %}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 question-div">
+							<h3>{{ 'Question'|trans }}</h3>
+							<div class="answer-inner">
+								{{ content.body }}
+								<!--<div class="q-images">
+									{{ content.field_question_images }}
+								</div>	
+								<div class="q-images">
+									{{ content.field_test_media }}
+								</div>	-->
+							</div>
+						</div>
+					</div>
+					{% if content.field_answer[0] is not empty %}
+					<div class="row answer">
+						<div class="col-sm-12 answer-div">
+							<h3>{{ 'Answer'|trans }}</h3>
+							<div class="answer-inner">  
+								{{ content.field_answer[0] }}
+							<!--	<div class="q-images">
+									{{ content.field_answer_images }}
+								</div>-->
+							</div>
+						</div>
+					</div>
+					{% endif %}
+				</div>
+				<div class="col-sm-3">
+					{% if node.field_question_images.value is not empty %}
+					<div class="item">
+						{{ content.field_question_images }}
+					</div>
+					{% endif %}
+					{% if node.field_answer_images.value is not empty %}
+					<div class="item">
+						{{ content.field_answer_images }}
+					</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+{# == Article comments == #}
+{# ====================== #}
+{% block article_comments %}
+
+  
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<div class="row">
+			<div class="layout-region layout-region--article-comments col-lg-6 col-md-6 col-sm-12 col-xs-12" id="region--article-comments">
+				<div class="block-region-article-comments">
+					<div class="block block--ctools-block block--entity-field:node:comment block-ctools-block block-entity-fieldnodecomment">
+						<div class="block-title-wrapper">
+							<h2 class="block__title block-title">
+							{% if logged_in %}
+								{{ 'Comments'|trans }}
+							{% else %}
+								<a href="/user/login" data-drupal-link-system-path="user/login">{{ 'Please Log-in to add Comments'|trans }}</a>
+							{% endif %}
+							</h2>
+						</div>  
+						<div{{ region_attributes.article_comments }} >
+						{{ content.field_comments }}
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="block-region-article-comments">
+					<div class="block block--ctools-block block--entity-field:node:comment block-ctools-block block-entity-fieldnodecomment">
+						<div class="block-title-wrapper">
+							<h2 class="block__title block-title">
+								{{ 'More Questions'|trans }}
+							</h2>
+						</div>  
+						<div>
+						{{ questionblock }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+{% endblock %}

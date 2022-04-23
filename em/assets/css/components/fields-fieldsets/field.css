@@ -1,0 +1,13 @@
+.field--label-inline {
+  display: flex;
+}
+
+.field--label-inline .field__label {
+  margin-right: .5rem;
+}
+
+.field--label-inline .field__label:after {
+  content: ':';
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/fields-fieldsets/field.css.map */

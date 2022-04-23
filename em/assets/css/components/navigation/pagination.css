@@ -1,0 +1,70 @@
+.pager {
+  margin-top: 3rem;
+}
+
+ul.pager__items {
+  padding-left: 0;
+  list-style: none;
+  background: #eceff1;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ul.pager__items .pager__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+ul.pager__items .pager__item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #607d8b;
+}
+
+ul.pager__items .pager__item a:hover {
+  color: #263238;
+}
+
+ul.pager__items li.is-active a {
+  background: #FFF;
+  color: #263238;
+  font-weight: bold;
+}
+
+ul.pager__items li.pager__item--first a,
+ul.pager__items li.pager__item--previous a,
+ul.pager__items li.pager__item--next a,
+ul.pager__items li.pager__item--last a {
+  width: auto;
+  padding: 0 15px;
+  border-radius: 0;
+}
+
+ul[data-drupal-views-infinite-scroll-pager] {
+  padding-left: 0;
+  list-style: none;
+  border-top: 10px solid #eceff1;
+  padding: 1.5rem 1rem;
+}
+
+ul[data-drupal-views-infinite-scroll-pager] li {
+  text-align: center;
+}
+
+ul[data-drupal-views-infinite-scroll-pager] li a {
+  padding: .7rem 4rem;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/navigation/pagination.css.map */

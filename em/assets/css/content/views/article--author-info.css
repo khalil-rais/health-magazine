@@ -1,0 +1,42 @@
+.view-authored-informations {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(38, 50, 56, 0.5);
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+.view-authored-informations a {
+  color: #263238;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.view-authored-informations a:hover {
+  text-decoration: none;
+}
+
+.view-authored-informations .author-picture {
+  width: 30px;
+}
+
+@media (min-width: 992px) {
+  .view-authored-informations .author-picture {
+    width: 40px;
+  }
+}
+
+.view-authored-informations .author-picture img {
+  border-radius: 50%;
+}
+
+.view-authored-informations .attachment-after {
+  margin-left: .4rem;
+}
+
+.view-authored-informations .contextual {
+  display: none;
+}
+
+/*# sourceMappingURL=../../sourcemaps/content/views/article--author-info.css.map */

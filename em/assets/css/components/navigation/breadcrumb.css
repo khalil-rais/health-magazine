@@ -1,0 +1,30 @@
+.breadcrumb ol, .breadcrumb li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  color: #607d8b;
+}
+
+.breadcrumb ol {
+  display: flex;
+}
+
+.breadcrumb li a {
+  color: #37474f;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb li:after {
+  content: ' / ';
+  margin-right: 3px;
+}
+
+.breadcrumb li:last-child:after {
+  display: none;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/navigation/breadcrumb.css.map */

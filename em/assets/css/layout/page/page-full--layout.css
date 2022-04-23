@@ -1,0 +1,29 @@
+.page-heading-wrapper {
+  background: #eceff1;
+  margin-bottom: 3rem;
+  padding: 2rem 0 2rem;
+}
+
+.page-heading-wrapper .block {
+  margin: 0;
+}
+
+.page-heading-wrapper h1.page-title {
+  font-size: 2rem;
+}
+
+.page-heading-wrapper nav.tabs {
+  margin-top: 1.5rem;
+  margin-bottom: -2rem;
+  border-top: 1px solid #cfd8dc;
+}
+
+.page-heading-wrapper nav.tabs ul.secondary {
+  background: #FFF;
+}
+
+.page-node-type-page .region-content {
+  margin: 0 0 4rem;
+}
+
+/*# sourceMappingURL=../../sourcemaps/layout/page/page-full--layout.css.map */

@@ -1,0 +1,175 @@
+.sidr {
+  display: block;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  padding: 0;
+  z-index: 999999;
+  width: 330px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 0.9rem;
+  background: #FFF;
+  color: #263238;
+  box-shadow: 5px 0 10px 0 rgba(38, 50, 56, 0.3) inset;
+}
+
+@media (min-width: 992px) {
+  .sidr {
+    width: 400px;
+  }
+}
+
+.sidr.right {
+  left: auto;
+  right: -330px;
+}
+
+@media (min-width: 992px) {
+  .sidr.right {
+    width: -400px;
+    right: -400px;
+  }
+}
+
+.sidr.left {
+  left: -330px;
+  right: auto;
+}
+
+@media (min-width: 992px) {
+  .sidr.left {
+    width: -400px;
+    left: -400px;
+  }
+}
+
+.sidr .block {
+  padding: 1rem;
+  border-bottom: 1px solid #eceff1;
+}
+
+.sidr .block:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 992px) {
+  .sidr .block {
+    padding: 2rem;
+  }
+}
+
+.sidr .block .block-title {
+  font-size: .8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sidr .block .block-title:first-letter {
+  margin-right: 0;
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.sidr ul.menu {
+  padding-left: 0;
+  list-style: none;
+  background: #FFF;
+  margin: 0;
+  padding: 0;
+}
+
+.sidr ul.menu a {
+  display: block;
+  padding: .888rem 1.1rem;
+  border-bottom: 1px solid rgba(38, 50, 56, 0.2);
+  color: #263238;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+
+.sidr ul.menu a:hover {
+  color: #000;
+}
+
+.sidr ul.menu li:last-child a {
+  border-bottom: none;
+}
+
+.sidr ul.menu li.menu-item--expanded > a:before {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: top;
+  content: "";
+  border-top: 4px solid #263238;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+}
+
+.sidr ul.menu li.menu-item--expanded.active {
+  background-color: #fafafa;
+}
+
+.sidr ul.menu li.menu-item--expanded ul {
+  background: #FFF;
+}
+
+.sidr ul.menu li.menu-item--expanded ul li.menu-item--expanded > a:before,
+.sidr ul.menu li.menu-item--expanded ul li.menu-item--expanded > .nolink:before {
+  color: #263238;
+}
+
+.sidr ul.menu li.menu-item--expanded ul a {
+  padding: 10px 20px 10px 1.4rem;
+  border-bottom: 1px solid rgba(38, 50, 56, 0.2);
+  color: #263238;
+  font-size: .778rem;
+  font-weight: normal;
+  text-transform: none;
+  transition: all .2s ease;
+}
+
+.sidr ul.menu li.menu-item--expanded ul a:hover {
+  color: #90a4ae;
+}
+
+.sidr ul.menu li.menu-item--expanded ul li.menu-item--expanded ul a {
+  color: #263238;
+  padding-left: 60px;
+}
+
+.sidr ul.menu li.menu-item--expanded > ul {
+  max-height: 0;
+  overflow-y: hidden;
+  transition: max-height .5s ease-in-out;
+}
+
+.sidr ul.menu li.menu-item--expanded > ul.open {
+  max-height: 800px;
+}
+
+.offcanvas-sidebar-overlay {
+  background: #000;
+  opacity: 0;
+  transition: opacity 1s ease;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  z-index: 100;
+}
+
+.offcanvas-sidebar-overlay.active {
+  right: 0;
+  opacity: .2;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/navigation/offcanvas-navigation--sidr.css.map */

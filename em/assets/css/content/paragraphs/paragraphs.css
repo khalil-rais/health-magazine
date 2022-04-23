@@ -1,0 +1,9 @@
+.field--name-field-paragraphs > .field__item {
+  margin: 0rem 0 1.8rem;
+}
+
+.field--name-field-paragraphs > .field__item:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=../../sourcemaps/content/paragraphs/paragraphs.css.map */

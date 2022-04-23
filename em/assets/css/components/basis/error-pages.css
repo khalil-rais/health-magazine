@@ -1,0 +1,15 @@
+.error-message-wrapper h1 {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.error-code {
+  background-color: #212121;
+  padding: 0 1rem;
+  color: #FFF;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/basis/error-pages.css.map */

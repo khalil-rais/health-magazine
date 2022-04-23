@@ -1,0 +1,90 @@
+ssh root access: Eye2019!
+admin access: Eye2019
+
+
+$databases['default']['default'] = array (
+  'database' => 'eyeclinic2',
+  'username' => 'root',
+  'password' => 'jydSbVbCo66u',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+
+
+mysqldump -u root -p eyeclinic2  -h localhost > backup_eyeclinic2_190319.sql
+jydSbVbCo66u
+
+mysql -u root -p
+
+use eyeclinic2;
+
+select * from users
+
+
+
+CREATE TABLE `shortcut_set_users` (
+CREATE TABLE `user__roles` (
+CREATE TABLE `user__user_picture` (
+CREATE TABLE `users` (
+CREATE TABLE `users_data` (
+CREATE TABLE `users_field_data` (
+CREATE TABLE `webform_access_group_user` (
+
+mysql -u root -p
+jydSbVbCo66u
+
+CREATE DATABASE eyeclinic3;
+///////////////////////////////
+Javascript are not shown
+Articles and user articles
+Logo color
+
+
+./em/assets/css/layout/article/
+./em_magazine/assets/css/custom.css
+
+ /var/www/html/eyewebclinic/em-drupal/
+ 
+ mysqldump -u root -p eyeclinic3  -h localhost > backup_eyeclinic3_190320.sql
+ 
+///////////////////////////////////////////
+http://159.89.139.184/em-dev/admin/structure/page_manager/manage/home_page_combo/page_variant__home_page_combo-panels_variant-6__content?js=nojs
+
+/////////////////////////////////////////
+AjaxError: 
+An AJAX HTTP error occurred.
+HTTP Result Code: 200
+Debugging information follows.
+Path: /em-dev/admin/structure/panels/page_manager.page/home_page_combo--home_page_combo-panels_variant-6/edit/63c9e31c-888f-4ca5-ab98-219d6bedde01?destination=/em-dev/admin/structure/page_manager/manage/home_page_combo/page_variant__home_page_combo-panels_variant-6__content%3Fjs%3Dnojs
+StatusText: OK
+ResponseText
+////////////////////////////////////////////
+Dear Support,
+
+In order to properly display the different photos in our articles and questions content, we would like to cerate the most apporopriate image styling.
+
+Constraints: globally, we have two kind of photos:
+1- Rectangular:
+as in http://159.89.139.184/em-drupal/age-related-macular-degeneration/vegf-trap-eye-eylea
+
+2- Square: 
+as in http://159.89.139.184/em-drupal/age-related-macular-degeneration/diagnosis-wet-age-related-macular-degeneration
+
+Our need: For these two diffrent kind of photos, would it be possible to have an image style that:
+a- provides a fixed width.
+b- shows all the image details.
+c- keep the width to height ratios.
+
+Best regards,
+Eye2019!
+
+
+patch -p0 -b <  panels_tempstore-updated-3031778-51.patch
+patch -p0 -b <  3033057-ctools31-15.patch
+
+/combo/7
+
+Compact Large + 2 Col Grid

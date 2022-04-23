@@ -1,0 +1,19 @@
+.view-mode-background > div, .view-mode-wide-background > div, .view-mode-large-background > div {
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.view-mode-background {
+  min-height: 10vh;
+}
+
+.view-mode-wide-background {
+  height: 75vh;
+}
+
+.view-mode-large-background {
+  height: 100vh;
+}
+
+/*# sourceMappingURL=../../sourcemaps/content/media/media--image-background.css.map */

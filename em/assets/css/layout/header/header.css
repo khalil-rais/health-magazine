@@ -1,0 +1,147 @@
+.header {
+  color: #263238;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.header a {
+  color: #263238;
+  text-decoration: none;
+  transition: color .1s ease-in-out;
+}
+
+.header a:hover {
+  color: rgba(38, 50, 56, 0.7);
+}
+
+.header .logo {
+  display: block;
+  width: 60px;
+}
+
+@media (min-width: 992px) {
+  .header .logo {
+    width: auto;
+    height: auto;
+  }
+}
+
+.header .logo-dark {
+  display: block;
+}
+
+.header .logo-light {
+  display: none;
+}
+
+.header .social-menu a {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  color: #263238;
+  font-size: 10px;
+  text-align: center;
+  transition: all .1s ease-in-out;
+}
+
+.header .social-menu a svg {
+  margin: auto;
+}
+
+.header .social-menu a:hover {
+  opacity: 1;
+  border-color: #263238;
+  background-color: #263238;
+  color: #FFF;
+}
+
+.header--top-wrapper {
+  background-color: #FFF;
+  border-bottom: 1px solid #eceff1;
+}
+
+.header--top-wrapper .region-header-secondary-menu {
+  display: flex;
+}
+
+.header--top-wrapper .region-header-secondary-menu > * {
+  border-left: 1px solid #cfd8dc;
+  margin-left: .75rem;
+  padding-left: .75rem;
+}
+
+.header--top-wrapper .region-header-secondary-menu > *:first-child {
+  border-left: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.header--top-wrapper ul.menu, .header--top-wrapper ul.links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header--top-wrapper ul.menu > li, .header--top-wrapper ul.links > li {
+  margin-left: .75rem;
+}
+
+.header--top-wrapper ul.menu > li:first-child, .header--top-wrapper ul.links > li:first-child {
+  margin-left: 0;
+}
+
+.header-top {
+  padding: 8px 0;
+  color: #263238;
+  font-size: 80%;
+}
+
+.header-top a {
+  color: #263238;
+}
+
+.header-top a:hover {
+  color: rgba(38, 50, 56, 0.7);
+}
+
+.header--bottom-wrapper {
+  background-color: #FFF;
+  padding: 15px 0 15px;
+  border-top: none;
+  border-bottom: 1px solid #eceff1;
+}
+
+.header--action-menu li {
+  border-left: 1px solid #b0bec5;
+  font-size: 1.333rem;
+}
+
+.header--action-menu li:first-child {
+  border-left: none;
+}
+
+.header--action-menu li:first-child button {
+  padding-left: 0;
+}
+
+.header--action-menu button {
+  background: transparent;
+  padding: 0 1rem;
+  border: none;
+  color: #263238;
+  cursor: pointer;
+}
+
+.header--action-menu button:hover {
+  color: rgba(38, 50, 56, 0.7);
+}
+
+/*# sourceMappingURL=../../sourcemaps/layout/header/header.css.map */

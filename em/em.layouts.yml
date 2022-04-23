@@ -1,0 +1,400 @@
+# ==========================================
+# HOME LAYOUTS
+# ==========================================
+
+
+# Page layout 1
+# ---------------------
+
+home_1:
+  label: 'Boxed Layout'
+  category: 'Home Layouts'
+  path: templates/layouts/home/home_1
+  template: layout--home-1
+  icon: home_1.png
+  regions:
+    featured:
+      label: Featured
+    top:
+      label: Top
+    top_below_first:
+      label: Top below first
+    top_below_second:
+      label: Top below second
+    top_below_third:
+      label: Top below third
+    middle_above_first:
+      label: 'Middle above first'
+    middle_above_second:
+      label: 'Middle above second'
+    middle:
+      label: Middle
+    middle_below_first:
+      label: Middle below first
+    middle_below_second:
+      label: Middle below second
+    middle_below_third:
+      label: Middle below third
+    bottom_above_first:
+      label: 'Bottom above first'
+    bottom_above_second:
+      label: 'Bottom above second'
+    bottom:
+      label: Bottom
+  default_region: middle
+
+
+
+# Page layout 1 Fluid
+# ---------------------
+
+home_1_fluid:
+  label: 'Fluid Layout'
+  category: 'Home Layouts'
+  path: templates/layouts/home/home_1_fluid
+  template: layout--home-1-fluid
+  library: em/fluid-layout
+  icon: home_1_fluid.png
+  regions:
+    featured:
+      label: Featured
+    top:
+      label: Top
+    top_below_first:
+      label: Top below first
+    top_below_second:
+      label: Top below second
+    top_below_third:
+      label: Top below third
+    middle_above_first:
+      label: 'Middle above first'
+    middle_above_second:
+      label: 'Middle above second'
+    middle:
+      label: Middle
+    middle_below_first:
+      label: Middle below first
+    middle_below_second:
+      label: Middle below second
+    middle_below_third:
+      label: Middle below third
+    bottom_above_first:
+      label: 'Bottom above first'
+    bottom_above_second:
+      label: 'Bottom above second'
+    bottom:
+      label: Bottom
+  default_region: middle
+
+
+# Page layout 1 + Header overlay
+# ------------------------------------------
+
+home_1_overlay_header:
+  label: 'Boxed Layout With Overlay Header'
+  category: 'Home Layouts'
+  path: templates/layouts/home/home_1_overlay_header
+  template: layout--home-1-overlay-header
+  library: em/header-overlay-style
+  icon: home_1_overlay_header.png
+  regions:
+    featured:
+      label: Featured
+    top:
+      label: Top
+    top_below_first:
+      label: Top below first
+    top_below_second:
+      label: Top below second
+    top_below_third:
+      label: Top below third
+    middle_above_first:
+      label: 'Middle above first'
+    middle_above_second:
+      label: 'Middle above second'
+    middle:
+      label: Middle
+    middle_below_first:
+      label: Middle below first
+    middle_below_second:
+      label: Middle below second
+    middle_below_third:
+      label: Middle below third
+    bottom_above_first:
+      label: 'Bottom above first'
+    bottom_above_second:
+      label: 'Bottom above second'
+    bottom:
+      label: Bottom
+  default_region: middle
+
+
+# Page layout 2 (Fluid + Header overlay)
+# ------------------------------------------
+
+home_1_fluid_overlay_header:
+  label: 'Fluid  Layout With Overlay Header'
+  category: 'Home Layouts'
+  path: templates/layouts/home/home_1_fluid_overlay_header
+  template: layout--home-1-fluid-overlay-header
+  library: em/fluid-layout-with-header-overlay
+  icon: home_1_fluid_overlay_header.png
+  regions:
+    featured:
+      label: Featured
+    top:
+      label: Top
+    top_below_first:
+      label: Top below first
+    top_below_second:
+      label: Top below second
+    top_below_third:
+      label: Top below third
+    middle_above_first:
+      label: 'Middle above first'
+    middle_above_second:
+      label: 'Middle above second'
+    middle:
+      label: Middle
+    middle_below_first:
+      label: Middle below first
+    middle_below_second:
+      label: Middle below second
+    middle_below_third:
+      label: Middle below third
+    bottom_above_first:
+      label: 'Bottom above first'
+    bottom_above_second:
+      label: 'Bottom above second'
+    bottom:
+      label: Bottom
+  default_region: middle
+
+
+
+# ==========================================
+# PAGE LAYOUTS
+# ==========================================
+
+
+# Page Layout 1 (One Column)
+# -----------------------------------------
+
+page_1:
+  label: 'Layout 1'
+  category: 'Page Layouts'
+  path: templates/layouts/page/page_1
+  template: layout--page-1
+  icon: page_1.png
+  regions:
+    page_title:
+      label: Page Title
+    breadcrumb:
+      label: Breadcrumb
+    tabs:
+      label: Tabs
+    content:
+      label: 'Content'
+  default_region: content
+
+
+# Page Layout 2 (Sidebar right)
+# -----------------------------------------
+
+page_2:
+  label: 'Layout 2 (Sidebar right)'
+  category: 'Page Layouts'
+  path: templates/layouts/page/page_2
+  template: layout--page-2
+  icon: page_2.png
+  regions:
+    page_title:
+      label: Page Title
+    breadcrumb:
+      label: Breadcrumb
+    tabs:
+      label: Tabs
+    content:
+      label: 'Content'
+    right:
+      label: 'Right'
+  default_region: content
+
+
+
+
+# ==========================================
+# ARTICLE LAYOUTS
+# ==========================================
+
+
+# Article default
+# ---------------------
+
+article_default:
+  label: 'Article Default'
+  category: 'Article Layouts'
+  path: templates/layouts/article/article_default
+  template: layout--article-default
+  icon: article_default.png
+  regions:
+    top:
+      label: 'Page Top'
+    article_header:
+      label: 'Article header'
+    article_content:
+      label: 'Article content'
+    article_comments:
+      label: 'Article comments'
+    right_sidebar:
+      label: 'Right sidebar'
+    bottom:
+      label: 'Page Bottom'
+  default_region: article_content
+
+
+
+# Article layout 1
+# Wide media (no sidebar)
+# --------------------------
+
+article_layout_1:
+  label: 'Article Layout 1'
+  category: 'Article Layouts'
+  path: templates/layouts/article/article_layout_1
+  template: layout--article-layout-1
+  library: em/header-overlay-style
+  icon: article_layout_1.png
+  regions:
+    article_media:
+      label: 'Media'
+    article_header:
+      label: 'Article header (float above media left)'
+    article_header_second:
+      label: 'Article header (float above media right)'
+    top:
+      label: 'Top'
+    article_content:
+      label: 'Article content'
+    article_comments:
+      label: 'Article comments'
+    bottom:
+      label: 'Bottom'
+  default_region: article_content
+
+
+
+# Article layout 2
+# Wide media (right sidebar)
+# -----------------------------
+
+article_layout_2:
+  label: 'Article Layout 2'
+  category: 'Article Layouts'
+  path: templates/layouts/article/article_layout_2
+  template: layout--article-layout-2
+  library: em/header-overlay-style
+  icon: article_layout_2.png
+  regions:
+    article_media:
+      label: 'Media'
+    article_header:
+      label: 'Article header (float above media left)'
+    article_header_second:
+      label: 'Article header (float above media right)'
+    top:
+      label: 'Top'
+    article_content:
+      label: 'Article content'
+    article_comments:
+      label: 'Article comments'
+    right_sidebar:
+      label: 'Right sidebar'
+    bottom:
+      label: 'Bottom'
+  default_region: article_content
+
+
+
+# Article layout 3
+# Large media (no sidebar)
+# --------------------------
+
+article_layout_3:
+  label: 'Article Layout 3'
+  category: 'Article Layouts'
+  path: templates/layouts/article/article_layout_3
+  template: layout--article-layout-3
+  library: em/header-overlay-style
+  icon: article_layout_3.png
+  regions:
+    article_media:
+      label: 'Media'
+    article_header:
+      label: 'Article header (float above media)'
+    top:
+      label: 'Top'
+    article_content:
+      label: 'Article content'
+    article_comments:
+      label: 'Article comments'
+    bottom:
+      label: 'Bottom'
+  default_region: article_content
+
+
+
+# Article layout 4
+# Large media (sidebar right)
+# -----------------------------
+
+article_layout_4:
+  label: 'Article Layout 4'
+  category: 'Article Layouts'
+  path: templates/layouts/article/article_layout_4
+  template: layout--article-layout-4
+  library: em/header-overlay-style
+  icon: article_layout_4.png
+  regions:
+    article_media:
+      label: 'Media'
+    article_header:
+      label: 'Article header (float above media)'
+    top:
+      label: 'Top'
+    article_content:
+      label: 'Article content'
+    article_comments:
+      label: 'Article comments'
+    right_sidebar:
+      label: 'Right sidebar'
+    bottom:
+      label: 'Bottom'
+  default_region: article_content
+
+
+
+# Article layout 5
+# Large media (no sidebar)
+# --------------------------
+
+article_layout_5:
+  label: 'Article Layout 5'
+  category: 'Article Layouts'
+  path: templates/layouts/article/article_layout_5
+  template: layout--article-layout-5
+  icon: article_layout_5.png
+  regions:
+    article_media:
+      label: 'Media'
+    article_header:
+      label: 'Article header (float above media)'
+    top:
+      label: 'Top'
+    article_content:
+      label: 'Article content'
+    article_comments:
+      label: 'Article comments'
+    bottom:
+      label: 'Bottom'
+  default_region: article_content

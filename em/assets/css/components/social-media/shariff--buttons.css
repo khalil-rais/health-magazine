@@ -1,0 +1,163 @@
+.shariff ul {
+  display: flex;
+  max-width: none;
+  flex: inherit;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.shariff ul li {
+  flex: 1 1 auto;
+  margin: 0 10px 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+
+.shariff ul li:first-child {
+  margin-left: 0;
+}
+
+.shariff ul li:last-child {
+  margin-right: 0;
+}
+
+.shariff a {
+  display: block;
+  padding: .6rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1rem;
+  white-space: nowrap;
+}
+
+.shariff a svg {
+  margin-right: .5rem;
+}
+
+.shariff a .share_text {
+  font-size: .85rem;
+}
+
+.shariff ul.theme-white li a {
+  border: 1px solid #fff;
+  color: #FFF;
+}
+
+.shariff ul.theme-grey li a {
+  border: 1px solid #263238;
+  color: #263238;
+}
+
+.shariff ul.theme-grey li a:hover {
+  color: #FFF;
+}
+
+.shariff ul.theme-white li.twitter a:hover, .shariff ul.theme-grey li.twitter a:hover {
+  background-color: #1DA1F2;
+  border-color: #1DA1F2;
+}
+
+.shariff ul.theme-white li.facebook a:hover, .shariff ul.theme-grey li.facebook a:hover {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.shariff ul.theme-white li.googleplus a:hover, .shariff ul.theme-grey li.googleplus a:hover {
+  background-color: #1DA1F2;
+  border-color: #1DA1F2;
+}
+
+.shariff ul.theme-white li.linkedin a:hover, .shariff ul.theme-grey li.linkedin a:hover {
+  background-color: #0077B5;
+  border-color: #0077B5;
+}
+
+.shariff ul.theme-white li.pinterest a:hover, .shariff ul.theme-grey li.pinterest a:hover {
+  background-color: #BD081C;
+  border-color: #BD081C;
+}
+
+.shariff ul.theme-white li.tumblr a:hover, .shariff ul.theme-grey li.tumblr a:hover {
+  background-color: #2C4762;
+  border-color: #2C4762;
+}
+
+.shariff ul.theme-white li.mail a:hover, .shariff ul.theme-grey li.mail a:hover {
+  background-color: #03a9f4;
+  border-color: #03a9f4;
+}
+
+.shariff ul.theme-colored li.twitter a {
+  background-color: #1DA1F2;
+  border: 1px solid #1DA1F2;
+  color: #FFF;
+}
+
+.shariff ul.theme-colored li.twitter a:hover {
+  background-color: #0c85d0;
+}
+
+.shariff ul.theme-colored li.facebook a {
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+  color: #FFF;
+}
+
+.shariff ul.theme-colored li.facebook a:hover {
+  background-color: #2d4373;
+}
+
+.shariff ul.theme-colored li.googleplus a {
+  background-color: #1DA1F2;
+  border: 1px solid #1DA1F2;
+  color: #FFF;
+}
+
+.shariff ul.theme-colored li.googleplus a:hover {
+  background-color: #0c85d0;
+}
+
+.shariff ul.theme-colored li.linkedin a {
+  background-color: #0077B5;
+  border: 1px solid #0077B5;
+  color: #FFF;
+}
+
+.shariff ul.theme-colored li.linkedin a:hover {
+  background-color: #005582;
+}
+
+.shariff ul.theme-colored li.pinterest a {
+  background-color: #BD081C;
+  border: 1px solid #BD081C;
+  color: #FFF;
+}
+
+.shariff ul.theme-colored li.pinterest a:hover {
+  background-color: #8c0615;
+}
+
+.shariff ul.theme-colored li.tumblr a {
+  background-color: #2C4762;
+  border: 1px solid #2C4762;
+  color: #FFF;
+}
+
+.shariff ul.theme-colored li.tumblr a:hover {
+  background-color: #1c2e3f;
+}
+
+.shariff ul.theme-colored li.mail a {
+  background-color: #03a9f4;
+  border: 1px solid #03a9f4;
+  color: #FFF;
+}
+
+.shariff ul.theme-colored li.mail a:hover {
+  background-color: #0286c2;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/social-media/shariff--buttons.css.map */

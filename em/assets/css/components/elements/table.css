@@ -1,0 +1,10 @@
+.table td.is-active {
+  background: #eceff1;
+}
+
+.table .thead-dark a {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/elements/table.css.map */

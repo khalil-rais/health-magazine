@@ -1,0 +1,12 @@
+.maintenance-wrapper {
+  padding: 3rem 2rem;
+  border: 1px solid #e0e0e0;
+}
+
+.maintenance-wrapper h1 {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/basis/maintenance-page.css.map */

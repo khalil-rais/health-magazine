@@ -1,0 +1,32 @@
+.scroll-to-top-button {
+  background: #263238;
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 10px 0 rgba(38, 50, 56, 0.5);
+  border-radius: 50%;
+  transition: all .25s ease-in-out, bottom .7s ease-in-out;
+  opacity: .3;
+  color: #FFF;
+  font-size: 2rem;
+  line-height: 48px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  position: fixed;
+  right: 2rem;
+  bottom: -200px;
+  z-index: 800;
+}
+
+.scroll-to-top-button.active {
+  bottom: 50px;
+}
+
+.scroll-to-top-button:hover {
+  background: #263238;
+  color: #FFF;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/navigation/scroll-to-top-button.css.map */

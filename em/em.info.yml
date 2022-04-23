@@ -1,0 +1,58 @@
+name: EM Magazine (base theme)
+type: theme
+hidden: false
+base theme: charm
+description: 'Blog & Magazine Drupal Theme'
+package: EM
+version: 1.3.2
+core: 8.x
+
+
+regions:
+  header_secondary_menu: 'Header secondary menu'
+  header_main_menu: 'Header main menu'
+  tabs: 'Tabs'
+  page_title: 'Page title'
+  breadcrumb: 'Breadcrumb'
+  content: 'Main content'
+  offcanvas_sidebar: 'Off-Canvas sidebar'
+  footer_top: 'Footer top'
+  footer_bottom: 'Footer bottom'
+
+libraries:
+  - charm/font-awesome-cdn
+  - charm/font-awesome-4-upgrade-cdn
+  - em/google-fonts
+  - em/global-styling
+  - em/theme-utilities
+  - em/sidr-offcanvas-navigation
+  - em/search
+  - em/drupal-tabs
+
+ckeditor_stylesheets:
+  - assets/css/bootstrap-reboot.css
+  - assets/css/bootstrap-grid.css
+  - assets/css/bootstrap-components.css
+  - assets/css/ckeditor.css
+
+libraries-override:
+  core/normalize: false
+  classy/base:
+    css:
+      component:
+        css/components/breadcrumb.css: false
+  masonry/masonry.layout:
+    css:
+      theme:
+        css/masonry.css: false
+  tb_megamenu/theme.tb_megamenu:
+    css:
+      theme:
+        https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css: false
+        css/tb_megamenu.bootstrap.css: false
+        css/tb_megamenu.default.css: false
+        css/tb_megamenu.compatibility.css: false
+
+libraries-extend:
+  commerce_cart/cart_block:
+    - em/cart_block

@@ -1,0 +1,242 @@
+.slick--optionset--em-single-item-slider .view-content > div, .slick--optionset--em-center-mode-featured-slider .view-content > div, .slick--optionset--em-2-column-featured-slider .view-content > div {
+  position: relative;
+}
+
+.slick--optionset--em-single-item-slider a, .slick--optionset--em-center-mode-featured-slider a, .slick--optionset--em-2-column-featured-slider a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.slick--optionset--em-single-item-slider a.background-link, .slick--optionset--em-center-mode-featured-slider a.background-link, .slick--optionset--em-2-column-featured-slider a.background-link {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.slick--optionset--em-single-item-slider .media-image:before, .slick--optionset--em-center-mode-featured-slider .media-image:before, .slick--optionset--em-2-column-featured-slider .media-image:before {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  background: rgba(38, 50, 56, 0.25);
+  content: '';
+}
+
+.slick--optionset--em-single-item-slider .content-wrapper, .slick--optionset--em-center-mode-featured-slider .content-wrapper, .slick--optionset--em-2-column-featured-slider .content-wrapper {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.slick--optionset--em-single-item-slider .channel, .slick--optionset--em-center-mode-featured-slider .channel, .slick--optionset--em-2-column-featured-slider .channel {
+  margin-bottom: .75rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.89rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.slick--optionset--em-single-item-slider .channel a:hover, .slick--optionset--em-center-mode-featured-slider .channel a:hover, .slick--optionset--em-2-column-featured-slider .channel a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.slick--optionset--em-single-item-slider .title, .slick--optionset--em-center-mode-featured-slider .title, .slick--optionset--em-2-column-featured-slider .title {
+  margin-bottom: .778rem;
+}
+
+@media screen and (min-width: 1200px) and (min-height: 900px) {
+  .slick--optionset--em-single-item-slider .title, .slick--optionset--em-center-mode-featured-slider .title, .slick--optionset--em-2-column-featured-slider .title {
+    margin-bottom: 1rem;
+  }
+}
+
+.slick--optionset--em-single-item-slider .authored-info, .slick--optionset--em-center-mode-featured-slider .authored-info, .slick--optionset--em-2-column-featured-slider .authored-info {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Montserrat", sans-serif;
+  font-size: .78rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.slick--optionset--em-single-item-slider .authored-info a, .slick--optionset--em-center-mode-featured-slider .authored-info a, .slick--optionset--em-2-column-featured-slider .authored-info a, .slick--optionset--em-single-item-slider .authored-info span, .slick--optionset--em-center-mode-featured-slider .authored-info span, .slick--optionset--em-2-column-featured-slider .authored-info span {
+  text-decoration: underline;
+}
+
+.slick--optionset--em-single-item-slider .authored-info a:hover, .slick--optionset--em-center-mode-featured-slider .authored-info a:hover, .slick--optionset--em-2-column-featured-slider .authored-info a:hover, .slick--optionset--em-single-item-slider .authored-info span:hover, .slick--optionset--em-center-mode-featured-slider .authored-info span:hover, .slick--optionset--em-2-column-featured-slider .authored-info span:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.slick--optionset--em-single-item-slider hr, .slick--optionset--em-center-mode-featured-slider hr, .slick--optionset--em-2-column-featured-slider hr {
+  width: 10%;
+  margin: 1rem auto;
+  border-top: 5px dotted #FFF;
+}
+
+.slick--optionset--em-single-item-slider .btn, .slick--optionset--em-center-mode-featured-slider .btn, .slick--optionset--em-2-column-featured-slider .btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.slick--optionset--em-single-item-slider .content-wrapper, .slick--optionset--em-center-mode-featured-slider .content-wrapper, .slick--optionset--em-2-column-featured-slider .content-wrapper {
+  height: 100%;
+}
+
+.slick--optionset--em-single-item-slider .slick-slide, .slick--optionset--em-center-mode-featured-slider .slick-slide, .slick--optionset--em-2-column-featured-slider .slick-slide {
+  position: relative;
+}
+
+.slick--optionset--em-single-item-slider .media-image, .slick--optionset--em-center-mode-featured-slider .media-image, .slick--optionset--em-2-column-featured-slider .media-image {
+  opacity: 0;
+  transition: opacity .9s ease-in-out;
+}
+
+.slick--optionset--em-single-item-slider .media-image:before, .slick--optionset--em-center-mode-featured-slider .media-image:before, .slick--optionset--em-2-column-featured-slider .media-image:before {
+  transition: opacity .4s ease-in-out;
+}
+
+.slick--optionset--em-single-item-slider .content-wrapper, .slick--optionset--em-center-mode-featured-slider .content-wrapper, .slick--optionset--em-2-column-featured-slider .content-wrapper {
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.slick--initialized.slick--optionset--em-single-item-slider .media-image, .slick--initialized.slick--optionset--em-center-mode-featured-slider .media-image, .slick--initialized.slick--optionset--em-2-column-featured-slider .media-image {
+  opacity: 1;
+}
+
+.slick--initialized.slick--optionset--em-single-item-slider .media-image:before, .slick--initialized.slick--optionset--em-center-mode-featured-slider .media-image:before, .slick--initialized.slick--optionset--em-2-column-featured-slider .media-image:before {
+  opacity: 1;
+}
+
+.slick--initialized.slick--optionset--em-single-item-slider .content-wrapper, .slick--initialized.slick--optionset--em-center-mode-featured-slider .content-wrapper, .slick--initialized.slick--optionset--em-2-column-featured-slider .content-wrapper {
+  opacity: 1;
+}
+
+.slick--optionset--em-single-item-slider .slick-track .channel, .slick--optionset--em-center-mode-featured-slider .slick-track .channel, .slick--optionset--em-single-item-slider .slick-track .title, .slick--optionset--em-center-mode-featured-slider .slick-track .title, .slick--optionset--em-single-item-slider .slick-track .authored-info, .slick--optionset--em-center-mode-featured-slider .slick-track .authored-info, .slick--optionset--em-single-item-slider .slick-track hr, .slick--optionset--em-center-mode-featured-slider .slick-track hr, .slick--optionset--em-single-item-slider .slick-track .btn-wrapper, .slick--optionset--em-center-mode-featured-slider .slick-track .btn-wrapper {
+  opacity: 0;
+  position: relative;
+  transition: top .6s ease-in-out, opacity .6s ease-in-out;
+}
+
+.slick--optionset--em-single-item-slider .slick-track .channel, .slick--optionset--em-center-mode-featured-slider .slick-track .channel {
+  top: 50px;
+}
+
+.slick--optionset--em-single-item-slider .slick-track .title, .slick--optionset--em-center-mode-featured-slider .slick-track .title, .slick--optionset--em-single-item-slider .slick-track .btn-wrapper, .slick--optionset--em-center-mode-featured-slider .slick-track .btn-wrapper {
+  top: 40px;
+}
+
+.slick--optionset--em-single-item-slider .slick-track hr, .slick--optionset--em-center-mode-featured-slider .slick-track hr {
+  top: 0;
+}
+
+.slick--optionset--em-single-item-slider .slick-track .authored-info, .slick--optionset--em-center-mode-featured-slider .slick-track .authored-info {
+  top: -20px;
+}
+
+.slick--optionset--em-single-item-slider .slick-track .slick-active .channel, .slick--optionset--em-center-mode-featured-slider .slick-track .slick-active .channel, .slick--optionset--em-single-item-slider .slick-track .slick-active .title, .slick--optionset--em-center-mode-featured-slider .slick-track .slick-active .title, .slick--optionset--em-single-item-slider .slick-track .slick-active .authored-info, .slick--optionset--em-center-mode-featured-slider .slick-track .slick-active .authored-info, .slick--optionset--em-single-item-slider .slick-track .slick-active hr, .slick--optionset--em-center-mode-featured-slider .slick-track .slick-active hr, .slick--optionset--em-single-item-slider .slick-track .slick-active .btn-wrapper, .slick--optionset--em-center-mode-featured-slider .slick-track .slick-active .btn-wrapper {
+  top: 0;
+  opacity: 1;
+}
+
+.slick--optionset--em-single-item-slider .slick-track .slick-active .channel, .slick--optionset--em-center-mode-featured-slider .slick-track .slick-active .channel {
+  transition-delay: .2s;
+}
+
+.slick--optionset--em-single-item-slider .slick-track .slick-active .title, .slick--optionset--em-center-mode-featured-slider .slick-track .slick-active .title {
+  transition-delay: .6s;
+}
+
+.slick--optionset--em-single-item-slider .slick-track .slick-active .authored-info, .slick--optionset--em-center-mode-featured-slider .slick-track .slick-active .authored-info {
+  transition-delay: .9s;
+}
+
+.slick--optionset--em-single-item-slider .slick-track .slick-active hr, .slick--optionset--em-center-mode-featured-slider .slick-track .slick-active hr {
+  transition-delay: 1s;
+}
+
+.slick--optionset--em-single-item-slider .slick-track .slick-active .btn-wrapper, .slick--optionset--em-center-mode-featured-slider .slick-track .slick-active .btn-wrapper {
+  transition-delay: .9s;
+}
+
+.slick--optionset--em-single-item-slider .title {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 992px) {
+  .slick--optionset--em-single-item-slider .title {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-height: 900px) {
+  .slick--optionset--em-single-item-slider .title {
+    padding: 0;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+  .slick--optionset--em-single-item-slider.h-100 .title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+.slick--optionset--em-single-item-slider .btn {
+  padding: .4rem 1.4rem;
+  font-size: .779rem;
+}
+
+@media screen and (min-width: 1200px) and (min-height: 900px) {
+  .slick--optionset--em-single-item-slider .btn {
+    padding: .5rem 1.8rem .6rem;
+    font-size: .89rem;
+  }
+}
+
+.slick--optionset--em-center-mode-featured-slider .media-image {
+  height: 55vh;
+}
+
+@media screen and (min-width: 1200px) and (min-height: 900px) {
+  .slick--optionset--em-center-mode-featured-slider .title {
+    padding: 0;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+}
+
+.slick--optionset--em-center-mode-featured-slider .btn {
+  padding: .4rem 1rem .4rem;
+  font-size: .8rem;
+}
+
+.slick--optionset--em-2-column-featured-slider .media-image {
+  height: 55vh;
+}
+
+.slick--optionset--em-2-column-featured-slider .title {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+@media screen and (min-width: 1200px) and (min-height: 900px) {
+  .slick--optionset--em-2-column-featured-slider .title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+/*# sourceMappingURL=../../sourcemaps/content/views/slick-featured-sliders.css.map */

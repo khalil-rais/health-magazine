@@ -1,0 +1,87 @@
+.search-block-wrapper {
+  background-color: rgba(30, 39, 44, 0.98);
+  display: none;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.search-block-wrapper.active {
+  display: flex;
+}
+
+.search-block-wrapper .close-block-modal {
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #FFF;
+  font-size: 1rem;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  cursor: pointer;
+}
+
+.search-block-wrapper .close-block-modal:hover {
+  opacity: .7;
+}
+
+.search-block-wrapper form {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.search-block-wrapper form input {
+  border: none;
+  border-radius: 0;
+}
+
+.search-block-wrapper form input[type="submit"] {
+  display: none;
+}
+
+.search-block-wrapper form .form-type-search {
+  width: 100%;
+  text-align: center;
+}
+
+.search-block-wrapper form .form-type-search:after {
+  content: 'Enter the keyword you wish to search for and press Enter';
+  display: block;
+  margin-top: 1rem;
+  color: #FFFFFF70;
+}
+
+.search-block-wrapper form input[type="search"] {
+  background: transparent;
+  border-bottom: 3px solid #FFF;
+  width: 100%;
+  padding: .5rem 1rem;
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .search-block-wrapper form input[type="search"] {
+    font-size: 3rem;
+  }
+}
+
+.search-block-wrapper form input[type="search"]::-ms-input-placeholder {
+  color: #FFF;
+}
+
+.search-block-wrapper form input[type="search"]::placeholder {
+  color: #FFF;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/search/search--block.css.map */

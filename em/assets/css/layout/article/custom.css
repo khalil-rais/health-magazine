@@ -1,0 +1,430 @@
+/*Mise en forme en arabe*/
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+
+div#region--article-comments article.comment.js-comment div.comment-content-wrapper footer.comment__meta.comment-user-info span.comment-title{
+	display: block;
+}
+/*Arabic Channel Border*/
+.ar .layout-region--article-header .field--name-field-channel {
+    color: #263238;
+    padding-right: .5rem;
+	padding-left: 0;
+    border-left: 0;
+	border-right: 5px solid #7b1fa2;
+	font-family: "Droid Arabic Kufi", serif;
+	direction: rtl;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1rem;
+}
+
+/*Mail in Footer*/
+.ar .page-footer__top-wrapper .social-menu a:last-child {
+    margin-right: 15px;
+}
+
+/*Hide default article title*/
+/*form#node-article-form.node-article-form.node-form a fieldset.required-fields.field-group-fieldset.js-form-item.form-item.js-form-wrapper.form-wrapper div.fieldset-wrapper div#edit-panelizer-wrapper.field--type-panelizer.field--name-panelizer.field--widget-panelizer.js-form-wrapper.form-wrapper div.js-form-item.form-item.js-form-type-select.form-type-select.form-item-panelizer-0-default,
+.details #block-shariffsharebuttons {
+	display: none;
+}*/
+div#region--article-comments div.block-region-article-comments div section.field.field--name-field-comments.field--type-comment.field--label-above.comment-wrapper h2.title{
+	display: none;
+}
+/*Hide Add summary*/
+form#node-question-form.node-question-form.node-form div#edit-body-wrapper.field--type-text-with-summary.field--name-body.field--widget-text-textarea-with-summary.js-form-wrapper.form-wrapper div.js-text-format-wrapper.text-format-wrapper.js-form-item.form-item div.js-form-item.form-item.js-form-type-textarea.form-type-textarea.js-form-item-body-0-value.form-item-body-0-value label span.field-edit-link{
+	display: none;
+}
+/*user menu formatting*/
+.user-logged-in.ar nav.menu--user-menu ul.menu{
+	text-align: right;
+	direction: rtl;
+}
+.user-logged-in nav.menu--user-menu ul.menu{
+	list-style: none;
+}
+
+.user-logged-in nav.menu--user-menu ul.menu li{
+	border-bottom: 1px solid #e6e6e6;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+}
+
+.user-logged-in nav.menu--user-menu ul.menu li:hover {
+    color: #263238 !important;
+    background-color: #f5f5f5;	
+}
+
+.ar div.block-region-right-sidebar nav.menu--user-menu:nth-child(1){
+	display: none;
+}
+
+div#region--bottom-above-second.layout-region.layout-region--bottom-above-second.col-12.col-lg-4.js-sticky-elements div.block-region-bottom-above-second nav.block-menu.navigation.menu--user-menu,
+article.user.user--type-user.user--view-mode-full.clearfix div div div.layout-region-wrapper--content div.container div.row div#region--right.layout-region.layout-region--right div.block-region-right nav.block.block--system.block-menu.navigation.menu--user-menu ul.menu li.menu-item:nth-child(3){
+	display: none;
+}
+
+.user-logged-in div#region--bottom-above-second.layout-region.layout-region--bottom-above-second.col-12.col-lg-4.js-sticky-elements div.block-region-bottom-above-second nav.block-menu.navigation.menu--user-menu{
+	display: block;
+}
+
+/*Préparer les icônes social*/
+.page-node-type-question div#block-shariffsharebuttons.block.block--shariff.block--region-content.block--shariff-block.block-shariff.block-shariff-block{
+	width: 50%;
+	padding-bottom: 50px;
+}
+
+.page-node-type-question .shariff ul.theme-white li a, 
+.page-node-type-question .shariff ul.theme-grey li a {
+	border: 1px solid #263238;
+	color: #263238;
+}
+
+.page-node-type-question .shariff ul.theme-white li a:hover, 
+.page-node-type-question .shariff ul.theme-grey li a:hover {
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+/*Masquer le breadcrumb*/
+/*.path-node div.dialog-off-canvas-main-canvas header.page-heading-wrapper div.container div.row div. div.region.region-breadcrumb{
+	display: none;
+}*/
+/*Masquer les commentaires pour qq nodes particuliers*/
+.node-1258 div#region--article-comments.layout-region.layout-region--article-comments,
+.node-1259 div#region--article-comments.layout-region.layout-region--article-comments,
+.node-1262 div#region--article-comments.layout-region.layout-region--article-comments{
+	display: none;
+}
+
+
+/*Masquer des titres qui doivent apparaitre en arabe*/
+.ar div#region--content div div.block-views-blockem-channels-and-tags-block-4 a div.block-title-wrapper .block__title.block-title{
+    display: none;
+}
+
+/*Masquer les blocs dans l'affichage détaillé des articles*/
+.en .block-views-blockem-latest-block-2,
+.ar .block-views-blockem-latest-block-1{
+	display: none !important;
+}
+
+/*Masquer un menu particulier*/
+.ar li.tb-megamenu-item.level-1.mega[data-id="menu_link_content:c21c00a2-5e93-478a-a2e3-de7f66707b17"],
+.en li.tb-megamenu-item.level-1.mega[data-id="menu_link_content:7ff26ef7-5a7e-4249-b03a-5747d5e88767"],
+.ar li.tb-megamenu-item.level-1.mega[data-id="menu_link_content:2f6474f0-6ff2-44ad-a3d6-2cfed9bd43e7"],
+.ar li.tb-megamenu-item.level-1.mega[data-id="menu_link_content:e512c010-aa38-4b3c-a7b4-499e58080d29"],
+.en li.tb-megamenu-item.level-1.mega[data-id="menu_link_content:852d7c32-d60e-4b35-be5f-94977cb4e5bc"],
+.ar nav.block-menu.navigation.menu--user-menu ul.menu li.menu-item:nth-child(2),
+.en nav.block.block--system.block--region-footer-top.block-menu.navigation.menu--footer ul.menu li.menu-item:nth-child(3),
+.en nav.block.block--system.block--region-footer-top.block-menu.navigation.menu--footer ul.menu li.menu-item:nth-child(5),
+.ar nav.block.block--system.block--region-footer-top.block-menu.navigation.menu--footer ul.menu li.menu-item:nth-child(2),
+.ar nav.block.block--system.block--region-footer-top.block-menu.navigation.menu--footer ul.menu li.menu-item:nth-child(4),
+.ar nav.block.block--system.block--region-footer-top.block-menu.navigation.menu--footer ul.menu li.menu-item:nth-child(6),
+.ar nav.block.block--system.block--region-offcanvas-sidebar.block-menu.navigation.menu--article-categories-menu > ul.menu > li.menu-item:nth-child(2),
+.ar nav.block.block--system.block--region-offcanvas-sidebar.block-menu.navigation.menu--article-categories-menu > ul.menu > li.menu-item:nth-child(4),
+.ar nav.block.block--system.block--region-offcanvas-sidebar.block-menu.navigation.menu--article-categories-menu > ul.menu > li.menu-item:nth-child(6),
+.en nav.block.block--system.block--region-offcanvas-sidebar.block-menu.navigation.menu--article-categories-menu > ul.menu > li.menu-item:nth-child(3),
+.en nav.block.block--system.block--region-offcanvas-sidebar.block-menu.navigation.menu--article-categories-menu > ul.menu > li.menu-item:nth-child(5)
+{
+	display: none;
+}
+/*Increase header menu*/
+.ar div#tb-megamenu-main.tb-megamenu.tb-megamenu-main.animate.slide div ul.tb-megamenu-nav.nav li.tb-megamenu-item.mega a{
+	font-size: 1rem !important;
+}
+.ar,
+.ar h1,.ar h2,.ar h3,.ar h4,.ar h5,.ar h6,.ar .h1,.ar .h2,.ar .h3,.ar .h4,.ar .h5,.ar .h6,
+.ar a.button
+ {
+  font-family: "Droid Arabic Kufi", serif;
+  direction: rtl;
+}
+
+.ar .header--top-wrapper ul.menu > li,.ar  .header--top-wrapper ul.links > li {
+    margin-right: .75rem;
+}
+
+.ar .header--top-wrapper .region-header-secondary-menu > * {
+    border-right: 1px solid #cfd8dc;
+    margin-left: .75rem;
+    padding-left: .75rem;
+	border-left: none;
+}
+
+.ar ul.header--action-menu.list-unstyled.mb-0.d-flex.align-items-center li.header-search button.js-toggle-search {
+    padding-left: 5px !important;
+}
+
+.ar ul.header--action-menu.list-unstyled.mb-0.d-flex.align-items-center {
+    padding-right: 5px;
+}
+
+/*Cacher la catégorie en arabe*/
+.ar .layout-region--featured .teaser--compact .teaser__channel a {
+    display: none;
+}
+
+
+/*Décaler la zone de textes de la question/réponse*/
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div.question-div,
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block div#region--article-comments.layout-region.layout-region--article-comments.col-lg-6.col-md-6.col-sm-12.col-xs-12,
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block div.col-lg-6.col-md-6.col-sm-12.col-xs-12{
+	padding-top: 20px;
+}
+
+.ar div.region.region-page-title,
+.ar div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div.question-div,
+.ar div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block div#region--article-comments.layout-region.layout-region--article-comments.col-lg-6.col-md-6.col-sm-12.col-xs-12,
+.ar div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block div.col-lg-6.col-md-6.col-sm-12.col-xs-12,
+.ar div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix footer  div.author,
+.ar div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row.answer div.answer-div,
+.ar div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type-article.node--view-mode-full.clearfix.node--promoted div div.layout--article-default article div.article-content-wrapper div.container div.row div.col-12.col-lg-8.mx-lg-auto div#region--article-header.layout-region.layout-region--article-header div.block-region-article-header,
+.ar article.node.node--view-mode--t1.teaser.teaser--card.teaser--bordered,
+.ar div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block div.layout--page-2 div.page-heading-wrapper div.container div.row div.col-12 div.block-region-page-title,
+.ar div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block div.layout--home-1 div.layout-region-wrapper--bottom-above div.container div.row div div.block-region-bottom-above-second.is_stuck div div div.view.view-em-popular-content.view-id-em_popular_content.view-display-id-block_5 div.view-content div,
+.ar div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type-article.node--view-mode-full.clearfix.node--promoted div div.layout--article-default article div.article-content-wrapper div.container div.row aside.sidebar.col-12.col-lg-4.mt-5.mt-lg-0.js-sticky-elements div#region--right-sidebar.layout-region.layout-region--right-sidebar.is_stuck div.block-region-right-sidebar div div div.view.view-em-latest.view-id-em_latest.view-display-id-block_2,
+.ar div#region--article-content  div.block-region-article-content div.block-entity-fieldnodefield-paragraphs div.field.field--name-field-paragraphs div.field__item,
+.ar form#user-login-form,
+.ar div.block.block--user.block--user-login-block.block-user.block-user-login-block div.item-list,
+.ar form#node-question-form.node-question-form.node-form{
+	direction: rtl;
+	text-align: right;
+}
+
+
+
+.ar form#user-login-form.user-login-form div#edit-actions.form-actions.js-form-wrapper.form-wrapper{
+	direction: rtl;
+	text-align: center;
+}
+
+
+.ar div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type-article.node--view-mode-full.clearfix.node--promoted div div.layout--article-default article div.article-content-wrapper div.container div.row aside.sidebar.col-12.col-lg-4.mt-5.mt-lg-0.js-sticky-elements div#region--right-sidebar.layout-region.layout-region--right-sidebar.is_stuck div.block-region-right-sidebar div div div.view.view-em-latest.view-id-em_latest.view-display-id-block_2 div.view-content div ul li.mb-4 article.node.node--type--article.node--view-mode--t9.promoted.teaser.teaser--item.teaser--item--small.align-items-center div.teaser__content{
+	padding-right: 20px;
+}
+
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row.answer div.answer-div{
+	padding-top: 40px;
+}
+
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content{
+	padding-top: 40px;
+}
+
+
+/*Décaler le champ des nodes questions*/
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div div.item div.field.field--type-list-string.field--label-above div.field__item,
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div div.item div.field.field--name-field-age.field--type-string.field--label-above div.field__item,
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div.question-div div.answer-inner div.clearfix.text-formatted.field.field--name-body.field--type-text-with-summary.field--label-hidden.field__item,
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row.answer div.answer-div div.answer-inner,
+html.js.fontawesome-i2svg-active.fontawesome-i2svg-complete body.path-node.page-node-type-question div.page-super-wrapper div.dialog-off-canvas-main-canvas div.main-content-wrapper.mb-6 div.container div.row div.col-12 div.region.region-content div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.item div.field.field--type-image.field--label-above div.field__items div.field__item{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.ar div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div div.item div.field.field--type-list-string.field--label-above div.field__item,
+.ar div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div div.item div.field.field--name-field-age.field--type-string.field--label-above div.field__item,
+.ar div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div.col-sm-9 div.row div.col-sm-12 div.item p{
+	text-align: right;
+}
+
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div div.item div.field.field--type-list-string.field--label-above div.field__item,
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div div.item div.field.field--name-field-age.field--type-string.field--label-above div.field__item,
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div.col-sm-9 div.row div.col-sm-12 div.item p{
+	font-size: 0.85rem;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+div.page-super-wrapper div.dialog-off-canvas-main-canvas div.main-content-wrapper.mb-6 div.container div.row div.col-12 div.region.region-content div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div.col-sm-12 div.item div.field.field--type-list-string.field--label-above div.field__label,
+div.page-super-wrapper div.dialog-off-canvas-main-canvas div.main-content-wrapper.mb-6 div.container div.row div.col-12 div.region.region-content div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div.col-sm-12 div.item div.field.field--name-field-age.field--type-string.field--label-above div.field__label,
+div.page-super-wrapper div.dialog-off-canvas-main-canvas div.main-content-wrapper.mb-6 div.container div.row div.col-12 div.region.region-content div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div.col-sm-12 h3,
+div.page-super-wrapper div.dialog-off-canvas-main-canvas div.main-content-wrapper.mb-6 div.container div.row div.col-12 div.region.region-content div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.item div.field.field--name-field-question-images.field--type-image.field--label-above div.field__label{
+	color: #2f5496;
+}
+
+/*Enlever la bordure des catégories*/
+div#top div.header .header--action-menu li{
+	border: none;
+}
+
+
+/*Masquer la catégorie dans le slider et dans la vue des catégories d'articles*/
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block div.layout--home-1 div#region--featured.layout-region.layout-region--featured div.block-region-featured div.views-element-container.block.block--views.block-views.block-views-blockem-content-grid-2-block-1 div div.content-grid-2.view.view-em-content-grid-2.view-id-em_content_grid_2.view-display-id-block_1 div.view-content div div.teaser.teaser--compact.teaser--large-compact div.teaser__content header div.teaser__channel.d-inline-flex.align-items-center a,
+article.node.node--type--article.node--view-mode--t1.teaser.teaser--card.teaser--bordered div.teaser__media div.relative div.channel.channel--boxed.teaser__channel{
+	display: none;
+}
+
+/*Changer la couleur des titres dans le slider*/
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block div.layout--home-1 div#region--featured.layout-region.layout-region--featured div.block-region-featured div.views-element-container.block.block--views.block-views.block-views-blockem-content-grid-2-block-1 div div.content-grid-2.view.view-em-content-grid-2.view-id-em_content_grid_2.view-display-id-block_1 div.view-content div div.teaser.teaser--compact.teaser--large-compact div.teaser__content header h2.teaser__headline a{
+	color: #e6e6e6;
+}
+
+/*Masquer trois sections intermédiaire*/
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block div.layout--home-1 div.layout-region-wrapper--middle-above div.container div.row,
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block div.layout--home-1 div.layout-region-wrapper--middle div.container div.row,
+div#block-mainpagecontent.block.block--system.block--region-content.block--system-main-block.block-system.block-system-main-block div.layout--home-1 div.layout-region-wrapper--top div.container div.row div#region--top.layout-region.layout-region--top.col-12 div.block-region-top div.views-element-container.block.block--views.block-views.block-views-blockem-combo-example-3-block-1{
+	display: none;
+}
+
+
+/*Mettre en forme les images dans les articles*/
+div#region--article-content.layout-region.layout-region--article-content div.block-region-article-content div.block.block--ctools-block.block--entity-field.block-ctools-block.block-entity-fieldnodefield-paragraphs div.field.field--name-field-paragraphs.field--type-entity-reference-revisions.field--label-hidden.field__items div.field__item div.paragraph.paragraph--type--image.paragraph--view-mode--default div.field.field--name-field-image.field--type-entity-reference.field--label-hidden.field__item figure.media-image.view-mode-default div.field.field--name-field-image.field--type-image.field--label-hidden.field__item,
+div#region--article-content div.field.field--name-field-image.field--type-image.field--label-hidden.field__item{
+	width: 100% !important;
+	max-height: 300px !important;
+}
+
+article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div.col-sm-3 div.item div.field.field--name-field-question-images.field--type-image.field--label-hidden.field__items div.field__item,
+article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div.col-sm-3 div.item div.field.field--name-field-answer-images.field--type-image.field--label-hidden.field__items div.field__item{
+	margin-bottom: 20px;
+}
+
+div#region--article-content.layout-region.layout-region--article-content div.block-region-article-content div.block.block--ctools-block.block--entity-field.block-ctools-block.block-entity-fieldnodefield-paragraphs div.field.field--name-field-paragraphs.field--type-entity-reference-revisions.field--label-hidden.field__items div.field__item div.paragraph.paragraph--type--image.paragraph--view-mode--default div.field.field--name-field-image.field--type-entity-reference.field--label-hidden.field__item figure.media-image.view-mode-default div.field.field--name-field-image.field--type-image.field--label-hidden.field__item img.img-fluid,
+div#region--article-content div.field.field--name-field-image.field--type-image.field--label-hidden.field__item img.img-fluid{
+	max-width: 100% !important;
+	max-height: 300px !important;
+	margin: auto;
+	display: block;		
+}
+
+article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.item div.field.field--name-field-answer-images.field--type-image.field--label-above div.field__items div.field__item  img.img-fluid,
+article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.item div.field.field--name-field-question-images.field--type-image.field--label-above div.field__items div.field__item  img.img-fluid{
+	margin: auto;
+	display: block;	
+}
+
+/*Changer la taille de la loupe*/
+ul.header--action-menu.list-unstyled.mb-0.d-flex.align-items-center li.header-search button.js-toggle-search svg.svg-inline--fa.fa-search.fa-w-16{
+	width: 0.8em !important;
+}
+
+ul.header--action-menu.list-unstyled.mb-0.d-flex.align-items-center li.header-search button.js-toggle-search {
+	padding-right: 5px !important;
+}
+
+
+ul.tb-megamenu-nav.nav.level-0.items-6 li.tb-megamenu-item.level-1.mega.dropdown > a.dropdown-toggle:before{
+    content: "\f06e";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: FontAwesome;
+	color: #0000ff;
+}
+
+ul.tb-megamenu-nav.nav.level-0.items-6 li.tb-megamenu-item.level-1.mega.dropdown > a.dropdown-toggle{
+	color: #fff;
+}
+
+/*Formater le bouton categories*/
+ul.header--action-menu.list-unstyled.mb-0.d-flex.align-items-center li.header-menu button.toggle-sidebar.js-toggle-sidebar{
+	font-weight: 900;
+	font-size: 0.778rem;
+	text-transform: uppercase;	
+	padding: 0.889rem 0.778rem;
+}
+
+.header--overlay-style ul.header--action-menu.list-unstyled.mb-0.d-flex.align-items-center li.header-menu button.toggle-sidebar.js-toggle-sidebar{
+	color: #fff;
+}
+.user-logged-in ul.header--action-menu.list-unstyled.mb-0.d-flex.align-items-center li.header-menu button.toggle-sidebar.js-toggle-sidebar{
+	color: #263238;
+}
+.header-stuck ul.header--action-menu.list-unstyled.mb-0.d-flex.align-items-center li.header-menu button.toggle-sidebar.js-toggle-sidebar{
+	color: #263238;
+}
+
+.ar ul.header--action-menu.list-unstyled.mb-0.d-flex.align-items-center li.header-menu button.toggle-sidebar.js-toggle-sidebar{
+	font-weight: 900;
+	font-size: 1rem;
+	text-transform: uppercase;	
+	padding: 0.889rem 0.778rem;
+}
+
+.header-stuck ul.header--action-menu.list-unstyled.mb-0.d-flex.align-items-center li.header-menu button.toggle-sidebar.js-toggle-sidebar:hover{
+	background: #fafafa;
+	color: #263238;
+}
+
+div.container div.row.justify-content-between.align-items-center.header-bottom div.col-auto div.row.justify-content-end.align-items-center div.col-auto{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/*Formater une icône*/
+details summary::before {
+    font-family: FontAwesome !important;
+}
+
+/*Afficher les menus cachés*/
+.sidr ul.menu li.menu-item--expanded > ul.open {
+    max-height: 2000px !important;
+}
+
+/*Mise en forme de l'affichage des questions*/
+article.node.node--type--question.node--view-mode--full.question.full.clearfix  div.field__label{
+  font-weight: bold;  
+}
+
+.ar article.node.node--type--question.node--view-mode--full.question.full.clearfix  div.field__label{
+	font-size: 1.10rem;
+}
+
+.ar article.node.node--type--question.node--view-mode--full.question.full.clearfix  div.field__label,
+.ar article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div.col-sm-12.question-div h3,
+.ar article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div.col-sm-12.answer-div h3
+
+{
+  text-align: right;
+}
+
+/*Changer la taille des champs Question/Réponse*/
+article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div.col-sm-12.question-div h3,
+article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.row div.col-sm-12.answer-div h3{
+  font-size: 1.20rem;
+  padding-bottom: 10px;
+}
+
+/*Masquer le libellé des champs image*/
+article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.item div.field.field--name-field-question-images.field--type-image.field--label-above div.field__label,
+article.node.node--type--question.node--view-mode--full.question.full.clearfix div.content div.question-data div.row div div.item div.field.field--name-field-answer-images.field--type-image.field--label-above div.field__label{
+	display: none;
+}
+@media (min-width: 992px) {
+	nav.block.block--system.block--region-offcanvas-sidebar.block-menu.navigation.menu--article-categories-menu > ul.menu > li.menu-item:nth-child(1),
+	nav.block.block--system.block--region-offcanvas-sidebar.block-menu.navigation.menu--article-categories-menu > ul.menu > li.menu-item:nth-child(2),
+	nav.block.block--system.block--region-offcanvas-sidebar.block-menu.navigation.menu--article-categories-menu > ul.menu > li.menu-item:nth-child(3),
+	nav.block.block--system.block--region-offcanvas-sidebar.block-menu.navigation.menu--article-categories-menu > ul.menu > li.menu-item:nth-child(4),
+	nav.block.block--system.block--region-offcanvas-sidebar.block-menu.navigation.menu--article-categories-menu > ul.menu > li.menu-item:nth-child(5),
+	.en nav.block.block--system.block--region-offcanvas-sidebar.block-menu.navigation.menu--article-categories-menu > ul.menu > li.menu-item:nth-child(6){
+		display: none;
+	}
+	span.for_mobile{
+		display: none;
+	}
+	div#region--featured.layout-region.layout-region--featured div.block-region-featured div.views-element-container.block.block--views.block-views.block-views-blockem-featured-2-column-slider-block-2{
+		display: none;		
+	}
+}
+@media (max-width: 991px) {
+
+	div#top.page-header.js-page-header div.header.header-a div div.header--bottom-wrapper div.container div.row.justify-content-between.align-items-center.header-bottom div.col-auto:nth-child(1){
+		width: 70%;
+	}
+	span.for_large{
+		display: none;
+	}
+	.header .logo {
+		width: auto;
+		height: auto;
+		max-width: 70%;
+	}  
+	span.for_mobile{
+		font-size: 20px;
+	}
+	div#region--featured.layout-region.layout-region--featured div.block-region-featured div.views-element-container.block.block--views.block-views.block-views-blockem-content-grid-2-block-1{
+		display: none;
+	}	
+}

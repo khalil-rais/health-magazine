@@ -1,0 +1,214 @@
+.checkout-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  top: -1.2rem;
+}
+
+@media (min-width: 992px) {
+  .checkout-progress {
+    justify-content: flex-end;
+  }
+}
+
+.checkout-progress li {
+  padding: .3rem 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  position: relative;
+  color: #78909c;
+}
+
+.checkout-progress li:before {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .checkout-progress li:before {
+    display: inline;
+  }
+}
+
+.checkout-progress li:after {
+  content: '';
+  display: block;
+  border-right: 1px solid #90a4ae;
+  transform: skewX(-20deg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.checkout-progress li:last-child:after {
+  display: none;
+}
+
+.checkout-progress .checkout-progress--step__previous {
+  color: #000;
+  font-weight: bold;
+}
+
+.checkout-progress .checkout-progress--step__current {
+  color: #000;
+  font-weight: bold;
+}
+
+.view-commerce-cart-form,
+.commerce-checkout-flow {
+  color: #455a64;
+}
+
+.view-commerce-cart-form table,
+.commerce-checkout-flow table {
+  border-bottom: 4px solid #eceff1;
+}
+
+.view-commerce-cart-form table th,
+.commerce-checkout-flow table th {
+  color: #263238;
+}
+
+.view-commerce-cart-form table td,
+.commerce-checkout-flow table td {
+  vertical-align: middle;
+}
+
+.view-commerce-cart-form table th.views-field-field-image,
+.view-commerce-cart-form table td.views-field-field-image,
+.commerce-checkout-flow table th.views-field-field-image,
+.commerce-checkout-flow table td.views-field-field-image {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .view-commerce-cart-form table th.views-field-field-image,
+  .view-commerce-cart-form table td.views-field-field-image,
+  .commerce-checkout-flow table th.views-field-field-image,
+  .commerce-checkout-flow table td.views-field-field-image {
+    width: 130px;
+    display: table-cell;
+  }
+}
+
+.view-commerce-cart-form fieldset,
+.commerce-checkout-flow fieldset {
+  margin-bottom: 3rem;
+}
+
+.view-commerce-cart-form fieldset legend,
+.commerce-checkout-flow fieldset legend {
+  padding: 0 0 .75rem;
+  border-bottom: 5px solid #eceff1;
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.view-commerce-cart-form fieldset fieldset legend,
+.commerce-checkout-flow fieldset fieldset legend {
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.view-commerce-cart-form .form-group.form-type-radio,
+.commerce-checkout-flow .form-group.form-type-radio {
+  margin-bottom: 0;
+}
+
+.view-commerce-cart-form .field--name-product-id,
+.view-commerce-cart-form .field--name-product-id a,
+.commerce-checkout-flow .field--name-product-id,
+.commerce-checkout-flow .field--name-product-id a {
+  color: #000;
+  font-weight: bold;
+}
+
+.view-commerce-cart-form .views-field-purchased-entity,
+.view-commerce-cart-form .views-field-purchased-entity a,
+.commerce-checkout-flow .views-field-purchased-entity,
+.commerce-checkout-flow .views-field-purchased-entity a {
+  color: #000;
+}
+
+.view-commerce-cart-form table .form-group,
+.commerce-checkout-flow table .form-group {
+  margin: 0;
+}
+
+.view-commerce-cart-form .delete-order-item.btn.btn-primary,
+.commerce-checkout-flow .delete-order-item.btn.btn-primary {
+  background-color: transparent;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  color: #e57373;
+}
+
+.view-commerce-cart-form .order-total-line-value,
+.commerce-checkout-flow .order-total-line-value {
+  width: auto;
+  min-width: 80px;
+}
+
+.view-commerce-cart-form .order-total-line__subtotal,
+.commerce-checkout-flow .order-total-line__subtotal {
+  color: #546e7a;
+}
+
+.view-commerce-cart-form .order-total-line__total,
+.commerce-checkout-flow .order-total-line__total {
+  width: auto;
+  min-width: 80px;
+  color: #263238;
+  font-size: 1.8rem;
+}
+
+.view-commerce-cart-form .order-total-line__total .order-total-line-label,
+.commerce-checkout-flow .order-total-line__total .order-total-line-label {
+  margin-right: 1rem;
+}
+
+.view-commerce-cart-form .form-actions,
+.commerce-checkout-flow .form-actions {
+  margin: 1rem 0 2rem;
+  padding: 1.5rem 0;
+  border-top: 4px solid #eceff1;
+  text-align: right;
+}
+
+.path-checkout .credit-card-form,
+.path-checkout .field--name-address {
+  background-color: rgba(236, 239, 241, 0.7);
+  padding: 1rem;
+  border-radius: 30px;
+  margin-top: 1rem;
+}
+
+.path-checkout .credit-card-form__expiration {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.path-checkout .credit-card-form__expiration select {
+  width: 100%;
+}
+
+.path-checkout .checkout-pane.checkout-pane-coupon-redemption .form-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin: 1.5rem 0;
+}
+
+.path-checkout .checkout-pane.checkout-pane-coupon-redemption .form-wrapper .form-item-sidebar-coupon-redemption-form-code {
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/commerce/commerce-checkout.css.map */

@@ -1,0 +1,55 @@
+.path-user .form-type-managed-file {
+  margin-bottom: 2rem;
+  padding: 1rem 1rem 2rem;
+  border-bottom: 5px solid #eceff1;
+}
+
+.path-user .focal-point-preview-link {
+  display: none;
+}
+
+.path-user .image-widget {
+  display: flex;
+  align-items: center;
+}
+
+.path-user .image-widget .image-preview {
+  margin-right: 1rem;
+}
+
+.user-logged-in .user-form {
+  margin: auto;
+}
+
+@media (min-width: 992px) {
+  .user-logged-in .user-form {
+    width: 50%;
+  }
+}
+
+.user-logged-in .user-form .horizontal-tabs {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  border: none;
+}
+
+.user-logged-in .user-form .horizontal-tabs .horizontal-tabs-pane {
+  padding: 0;
+}
+
+.user-logged-in .user-form .horizontal-tabs ul.horizontal-tabs-list {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #546e7a;
+}
+
+.user-logged-in .user-form .horizontal-tabs ul.horizontal-tabs-list li {
+  flex: 1 0 auto;
+  text-align: center;
+}
+
+.user-logged-in .user-form .horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button {
+  font-size: .778rem;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/user/user--dashboard.css.map */

@@ -1,0 +1,223 @@
+# Global styling
+# --------------------------------------
+global-styling:
+  css:
+    base:
+      assets/css/bootstrap/bootstrap-reboot.css: {}
+      assets/css/bootstrap/bootstrap-components.css: {}
+      assets/css/components/elements/table.css: {}
+      assets/css/components/elements/figure.css: {}
+      assets/css/components/forms/form.css: {}
+      assets/css/components/fields-fieldsets/field.css: {}
+      assets/css/components/fields-fieldsets/fieldset--horizontal-tabs.css: {}
+      assets/css/components/block/block.css: {}
+    layout:
+      assets/css/bootstrap/bootstrap-grid.css: {}
+      assets/css/basis.css: {}
+      assets/css/layout/header/header.css: {}
+      assets/css/layout/footer/footer.css: {}
+      assets/css/layout/page/page-full--layout.css: {}
+      assets/css/layout/article/article-teaser--layout.css: {}
+      assets/css/layout/article/article-full--layout.css: {}
+      assets/css/layout/views/content-listing-classes.css: {}
+      assets/css/layout/article/custom.css: {}
+    component:
+      assets/css/components/navigation/breadcrumb.css: {}
+      assets/css/components/navigation/pagination.css: {}
+      assets/css/components/navigation/header-menu--default-main-menu.css: {}
+      assets/css/components/navigation/header-menu--superfish.css: {}
+      assets/css/components/navigation/header-menu--tb-megamenu.css: {}
+      assets/css/components/modules/mailchimp.css: {}
+      assets/css/components/modules/poll.css: {}
+      assets/css/components/sliders/slick-slider--optionsets.css: {}
+      assets/css/components/social-media/shariff--buttons.css: {}
+      assets/css/components/search/search--results.css: {}
+      assets/css/components/user/user--login-register-form.css: {}
+      assets/css/components/user/user--dashboard.css: {}
+      assets/css/components/user/user--default-display.css: {}
+      assets/css/components/commerce/commerce-product.css: {}
+      assets/css/components/commerce/commerce-product-teaser.css: {}
+      assets/css/components/commerce/commerce-customer.css: {}
+      assets/css/components/commerce/commerce-cart-block.css: {}
+      assets/css/components/commerce/commerce-checkout.css: {}
+      assets/css/components/views/views--views-format.css: {}
+      assets/css/content/media/media--image-background.css: {}
+      assets/css/content/media/media--image-parallax.css: {}
+      assets/css/content/paragraphs/paragraphs.css: {}
+      assets/css/content/paragraphs/paragraph--text.css: {}
+      assets/css/content/paragraphs/paragraph--video.css: {}
+      assets/css/content/paragraphs/paragraph--quote.css: {}
+      assets/css/content/comments/comments.css: {}
+      assets/css/content/views/featured-grids.css: {}
+      assets/css/content/views/slick-featured-sliders.css: {}
+      assets/css/content/views/article--author-info.css: {}
+      assets/css/components/administration/components.css: {}
+    theme:
+      assets/css/utilities.css: {}
+  js:
+    assets/js/custom.js: {}
+# Theme Utilities
+# --------------------------------------
+theme-utilities:
+  js:
+    assets/js/utilities-background.min.js: {}
+  dependencies:
+    - core/jquery
+
+
+# Maintenance Page
+# --------------------------------------
+maintenance-page:
+  css:
+    component:
+      assets/css/components/basis/maintenance-page.css: {}
+
+# Error Pages
+# --------------------------------------
+error-pages:
+  css:
+    component:
+      assets/css/components/basis/error-pages.css: {}
+
+# Header
+# --------------------------------------
+header-overlay-style:
+  css:
+    state:
+      assets/css/layout/header/header--overlay-style.css: {}
+  js:
+    assets/js/header-overlay-style.min.js: {}
+  dependencies:
+    - core/jquery
+
+sticky-header:
+  css:
+    state:
+      assets/css/layout/header/header--sticky-header.css: {}
+  js:
+    assets/js/sticky-header.min.js: {}
+  dependencies:
+    - core/jquery
+
+
+# Fluid Layout
+# --------------------------------------
+fluid-layout:
+  css:
+    state:
+      assets/css/lyout/layout--page-fluid.css: {}
+
+
+fluid-layout-with-header-overlay:
+  css:
+    state:
+      assets/css/lyout/layout--page-fluid.css: {}
+  dependencies:
+    - em/header-overlay-style
+
+
+# Tabs
+# --------------------------------------
+drupal-tabs:
+  css:
+    component:
+      assets/css/components/administration/tabs.css: {}
+  js:
+    assets/js/drupal-tabs.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+
+
+# Google fonts
+# --------------------------------------
+google-fonts:
+  css:
+    base:
+      https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Montserrat:300,400,500,700: { type: external, minified: true }
+
+
+# Seearch
+# --------------------------------------
+search:
+  css:
+    component:
+      assets/css/components/search/search--block.css: {}
+  js:
+    assets/js/search-block.min.js: {}
+  dependencies:
+    - core/jquery
+
+
+# Off canvas navigation
+# --------------------------------------
+sidr-offcanvas-navigation:
+  css:
+    component:
+      assets/css/components/navigation/offcanvas-navigation--sidr.css: {}
+  js:
+    assets/js/sidr-offcanvas-navigation.min.js: {}
+  dependencies:
+      - charm/sidr
+      - core/jquery
+      - core/jquery.once
+      - core/drupal
+
+
+# Back to top button
+# --------------------------------------
+scroll-to-top-button:
+  css:
+    component:
+      assets/css/components/navigation/scroll-to-top-button.css: {}
+  js:
+    assets/js/scroll-to-top-button.min.js: {}
+  dependencies:
+    - charm/smooth-scroll
+
+
+# Sticky sidebars
+# --------------------------------------
+sticky-sidebars:
+  js:
+    assets/js/sticky-sidebars.min.js: {}
+  dependencies:
+    - charm/sticky-kit
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+    - core/matchmedia.addListener
+
+
+# Gallery grid
+# --------------------------------------
+gallery-grid:
+  css:
+    component:
+      assets/css/content/paragraphs/paragraph--gallery-grid.css: {}
+  js:
+    assets/js/gallery-grid.min.js: {}
+  dependencies:
+    - charm/jquery-photoswipe
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+
+
+# Commerce Cart
+# --------------------------------------
+cart_block:
+  js:
+    assets/js/commerce-cart-block.min.js: {}
+
+
+# All Bootstrap Components
+# --------------------------------------
+all-bootstrap-components:
+  css:
+    base:
+      assets/css/bootstrap/bootstrap-all-components.css: {}
+  dependencies:
+   - charm/bootstrap-js

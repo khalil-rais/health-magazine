@@ -1,0 +1,53 @@
+.product-teaser .field--type-image {
+  display: block;
+  position: relative;
+}
+
+.product-teaser .field--type-image:before {
+  content: "";
+  display: block;
+  transition: all 250ms ease-in-out;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+.product-teaser .field--type-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.product-teaser .field--name-title {
+  font-size: 1.333rem;
+  font-weight: 300;
+}
+
+.product-teaser .field--name-price {
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.product-teaser a {
+  color: #546e7a;
+  text-decoration: none;
+}
+
+.product-teaser a:hover .field--type-image:before {
+  box-shadow: inset 0 0 2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+.product-teaser-default {
+  display: inline-block;
+}
+
+.product-teaser-default .product-info-wrapper {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/commerce/commerce-product-teaser.css.map */

@@ -1,0 +1,134 @@
+div.ipe-actions {
+  align-items: center;
+}
+
+div.ipe-actions a {
+  color: #000 !important;
+}
+
+.ipe-tab.active a, .ipe-tab a:hover {
+  color: #039be5;
+  border-bottom: 3px solid #039be5;
+}
+
+.ipe-tab-content {
+  padding: 10px 0;
+  border: none;
+}
+
+.ipe-layout-image {
+  width: auto;
+}
+
+.ipe-category-picker-search {
+  background: transparent;
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+}
+
+.ipe-category-picker-search input[type="text"], .ipe-category-picker-search input[type="search"] {
+  margin: 0;
+  border-radius: 0;
+  text-align: center;
+}
+
+.ipe-category-picker-search .ipe-icon-search {
+  display: none;
+}
+
+.ipe-category, .ipe-layout {
+  padding: 14px;
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.ipe-category.ipe-create-category, .ipe-create-category.ipe-layout {
+  background: #039be5;
+  padding: 16px 12px 17px;
+}
+
+.ipe-category .ipe-category-count, .ipe-layout .ipe-category-count {
+  background: #424242;
+}
+
+.ipe-category:hover, .ipe-layout:hover {
+  background: #eeeeee;
+  color: #212121;
+}
+
+.ipe-category.active, .active.ipe-layout {
+  background: #FFF;
+  color: #000;
+}
+
+.ipe-category.active .ipe-category-count, .active.ipe-layout .ipe-category-count {
+  background: #039be5;
+}
+
+#panels-ipe-tray .ipe-category, #panels-ipe-tray .ipe-layout {
+  margin-right: 0;
+}
+
+.ipe-layout {
+  width: 150px;
+  margin-top: 10px;
+}
+
+.ipe-layout .ipe-layout-label {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #424242;
+}
+
+.ipe-layout .ipe-current-layout-label {
+  background: transparent;
+  border: 1px solid #039be5;
+  color: #039be5;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.ipe-layout:hover {
+  background-color: #f5f5f5;
+}
+
+.ipe-blockpicker-item a {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+}
+
+.ipe-blockpicker-item a:hover {
+  color: #039be5;
+  border: 1px solid #039be5;
+}
+
+.ipe-blockpicker-item a:hover h5 {
+  color: #039be5;
+}
+
+.ipe-category-picker-top.active {
+  padding-top: 0;
+}
+
+.ipe-category-picker-bottom {
+  background: #000;
+  color: #FFF;
+  padding: 0;
+  min-height: 40px;
+}
+
+.ipe-category-picker-bottom.top-open {
+  border: none;
+}
+
+.ipe-category-picker-bottom a {
+  color: #FFF;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/administration/components.css.map */

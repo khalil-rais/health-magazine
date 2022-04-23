@@ -1,0 +1,34 @@
+.region-header-main-menu .menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.region-header-main-menu .menu-item {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.region-header-main-menu .menu-item a {
+  padding: .75rem 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.region-header-main-menu .menu > .menu-item > a {
+  padding: 0.889rem 0.778rem;
+  color: #263238;
+  font-weight: 900;
+  font-size: 0.778rem;
+  text-transform: uppercase;
+  border-radius: .25rem;
+}
+
+.region-header-main-menu .menu > .menu-item > a:hover {
+  color: rgba(38, 50, 56, 0.7);
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/navigation/header-menu--default-main-menu.css.map */

@@ -1,0 +1,65 @@
+body {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  width: 770px;
+  max-width: 100%;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+}
+
+body > h1, body > h2, body > h3, body > h4, body > h5, body > h6 {
+  margin: 2.2rem 0 .8rem;
+  font-weight: 500;
+  line-height: 1.24;
+}
+
+body p {
+  margin: 0rem 0 1.8rem;
+}
+
+body p:last-child {
+  margin-bottom: 0;
+}
+
+body p.dropcaps:first-letter {
+  display: block;
+  float: left;
+  padding: 15px 10px 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+body a {
+  color: #7b1fa2;
+  text-decoration: underline;
+}
+
+body a:hover {
+  color: rgba(123, 31, 162, 0.7);
+  text-decoration: underline;
+}
+
+body .lead {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+body hr {
+  width: 45%;
+  margin: 2rem auto;
+  border-top: 4px dotted #ce93d8;
+}
+
+/*# sourceMappingURL=sourcemaps/ckeditor.css.map */

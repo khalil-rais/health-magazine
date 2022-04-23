@@ -1,0 +1,57 @@
+.horizontal-tabs {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  border: none;
+}
+
+.horizontal-tabs ul.horizontal-tabs-list {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #546e7a;
+}
+
+.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+}
+
+.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button a, .horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button.selected a {
+  color: #546e7a;
+  margin-bottom: -3px;
+  padding: .5rem 1rem;
+  transition: color .2s ease-in-out;
+}
+
+@media (min-width: 992px) {
+  .horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button a, .horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button.selected a {
+    padding: 1rem 2rem;
+  }
+}
+
+.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button a:hover, .horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button.selected a:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button.selected a {
+  border-bottom: 6px solid #000;
+  color: #000;
+}
+
+.horizontal-tabs details {
+  padding: 1rem 0 0 0;
+}
+
+.horizontal-tabs details .details-wrapper {
+  padding: 0;
+  border: none;
+}
+
+.horizontal-tabs details table tr:first-child th, .horizontal-tabs details table tr:first-child td {
+  border-top: none;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/fields-fieldsets/fieldset--horizontal-tabs.css.map */

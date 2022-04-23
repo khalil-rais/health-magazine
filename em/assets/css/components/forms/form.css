@@ -1,0 +1,206 @@
+.form-item,
+.form-actions {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.form-item {
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-item label:not(.option) {
+  margin-left: 20px;
+  font-size: .778rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input[type=text], input[type=password], input[type=color], input[type=date], input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=range], input[type=search], input[type=tel], input[type=time], input[type=url], input[type=week], select, textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  width: 100%;
+  padding: 10px 1rem;
+  border: 1px solid;
+  border-color: #b0bec5;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: .85rem;
+  outline: none;
+  transition: border-color .15s;
+}
+
+@media (min-width: 768px) {
+  input[type=text], input[type=password], input[type=color], input[type=date], input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=range], input[type=search], input[type=tel], input[type=time], input[type=url], input[type=week], select, textarea {
+    font-size: .85rem;
+  }
+}
+
+input:focus[type=text], input:focus[type=password], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=range], input:focus[type=search], input:focus[type=tel], input:focus[type=time], input:focus[type=url], input:focus[type=week], select:focus, textarea:focus, input:active[type=text], input:active[type=password], input:active[type=color], input:active[type=date], input:active[type=datetime-local], input:active[type=email], input:active[type=month], input:active[type=number], input:active[type=range], input:active[type=search], input:active[type=tel], input:active[type=time], input:active[type=url], input:active[type=week], select:active, textarea:active {
+  border-color: rgba(38, 50, 56, 0.8);
+  outline: none;
+}
+
+input[type=text]:focus::-ms-input-placeholder, input[type=password]:focus::-ms-input-placeholder, input[type=color]:focus::-ms-input-placeholder, input[type=date]:focus::-ms-input-placeholder, input[type=datetime-local]:focus::-ms-input-placeholder, input[type=email]:focus::-ms-input-placeholder, input[type=month]:focus::-ms-input-placeholder, input[type=number]:focus::-ms-input-placeholder, input[type=range]:focus::-ms-input-placeholder, input[type=search]:focus::-ms-input-placeholder, input[type=tel]:focus::-ms-input-placeholder, input[type=time]:focus::-ms-input-placeholder, input[type=url]:focus::-ms-input-placeholder, input[type=week]:focus::-ms-input-placeholder, select:focus::-ms-input-placeholder, textarea:focus::-ms-input-placeholder, input[type=text]:active::-ms-input-placeholder, input[type=password]:active::-ms-input-placeholder, input[type=color]:active::-ms-input-placeholder, input[type=date]:active::-ms-input-placeholder, input[type=datetime-local]:active::-ms-input-placeholder, input[type=email]:active::-ms-input-placeholder, input[type=month]:active::-ms-input-placeholder, input[type=number]:active::-ms-input-placeholder, input[type=range]:active::-ms-input-placeholder, input[type=search]:active::-ms-input-placeholder, input[type=tel]:active::-ms-input-placeholder, input[type=time]:active::-ms-input-placeholder, input[type=url]:active::-ms-input-placeholder, input[type=week]:active::-ms-input-placeholder, select:active::-ms-input-placeholder, textarea:active::-ms-input-placeholder {
+  opacity: .7;
+}
+
+input[type=text]:focus::placeholder, input[type=password]:focus::placeholder, input[type=color]:focus::placeholder, input[type=date]:focus::placeholder, input[type=datetime-local]:focus::placeholder, input[type=email]:focus::placeholder, input[type=month]:focus::placeholder, input[type=number]:focus::placeholder, input[type=range]:focus::placeholder, input[type=search]:focus::placeholder, input[type=tel]:focus::placeholder, input[type=time]:focus::placeholder, input[type=url]:focus::placeholder, input[type=week]:focus::placeholder, select:focus::placeholder, textarea:focus::placeholder, input[type=text]:active::placeholder, input[type=password]:active::placeholder, input[type=color]:active::placeholder, input[type=date]:active::placeholder, input[type=datetime-local]:active::placeholder, input[type=email]:active::placeholder, input[type=month]:active::placeholder, input[type=number]:active::placeholder, input[type=range]:active::placeholder, input[type=search]:active::placeholder, input[type=tel]:active::placeholder, input[type=time]:active::placeholder, input[type=url]:active::placeholder, input[type=week]:active::placeholder, select:active::placeholder, textarea:active::placeholder {
+  opacity: .7;
+}
+
+input[type=text]::-ms-input-placeholder, input[type=password]::-ms-input-placeholder, input[type=color]::-ms-input-placeholder, input[type=date]::-ms-input-placeholder, input[type=datetime-local]::-ms-input-placeholder, input[type=email]::-ms-input-placeholder, input[type=month]::-ms-input-placeholder, input[type=number]::-ms-input-placeholder, input[type=range]::-ms-input-placeholder, input[type=search]::-ms-input-placeholder, input[type=tel]::-ms-input-placeholder, input[type=time]::-ms-input-placeholder, input[type=url]::-ms-input-placeholder, input[type=week]::-ms-input-placeholder, select::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #90a4ae;
+  transition: opacity .2s;
+}
+
+input[type=text]::placeholder, input[type=password]::placeholder, input[type=color]::placeholder, input[type=date]::placeholder, input[type=datetime-local]::placeholder, input[type=email]::placeholder, input[type=month]::placeholder, input[type=number]::placeholder, input[type=range]::placeholder, input[type=search]::placeholder, input[type=tel]::placeholder, input[type=time]::placeholder, input[type=url]::placeholder, input[type=week]::placeholder, select::placeholder, textarea::placeholder {
+  color: #90a4ae;
+  transition: opacity .2s;
+}
+
+select {
+  width: auto;
+  height: 40px;
+}
+
+.form-checkboxes .form-item,
+.form-radios .form-item {
+  margin-top: .1em;
+  margin-bottom: .1em;
+}
+
+.form-checkboxes .form-item label.option,
+.form-radios .form-item label.option {
+  font-size: .9rem;
+}
+
+.form-type-radio .description,
+.form-type-checkbox .description {
+  margin-left: 0;
+}
+
+.form-actions .button {
+  margin-right: .278rem;
+}
+
+a.button,
+.button > a,
+button.button,
+input[type="submit"].button {
+  display: inline-block;
+  background-color: transparent;
+  padding: 10px 1.5rem;
+  border: 1px solid;
+  border-color: #b0bec5;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: .85rem;
+  font-weight: bold;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+a.button:hover,
+.button > a:hover,
+button.button:hover,
+input[type="submit"].button:hover {
+  background-color: #FFF;
+  border-color: #eceff1;
+  color: #263238;
+  box-shadow: 0 2px 20px 0 rgba(38, 50, 56, 0.3);
+}
+
+a.button:active,
+.button > a:active,
+button.button:active,
+input[type="submit"].button:active {
+  box-shadow: none;
+}
+
+a.button.primary,
+.button.primary > a,
+a.button.button--primary,
+button.button--primary,
+input[type="submit"].button.button--primary {
+  background-color: #263238;
+  border-color: #263238;
+  color: #FFF;
+}
+
+a.button.primary:hover,
+.button.primary > a:hover,
+a.button.button--primary:hover,
+button.button--primary:hover,
+input[type="submit"].button.button--primary:hover {
+  background-color: #7b1fa2;
+  border-color: #7b1fa2;
+  color: #FFF;
+}
+
+.btn-primary {
+  background-color: #263238;
+  border-color: #263238;
+}
+
+.btn-primary:hover, .btn-primary:active {
+  background-color: #7b1fa2;
+  border-color: #7b1fa2;
+}
+
+.btn-primary:focus {
+  box-shadow: none !important;
+}
+
+.description {
+  margin: 10px 20px 0;
+  font-size: .778rem;
+  color: rgba(38, 50, 56, 0.6);
+}
+
+.description a {
+  text-decoration: underline;
+}
+
+details summary {
+  display: block;
+  background-color: #f2f4f5;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: .9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+}
+
+details summary:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  margin-right: 10px;
+}
+
+details summary:hover {
+  background-color: #e6eaed;
+}
+
+details summary[aria-expanded="true"]:before {
+  content: "\f106";
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details .details-wrapper {
+  padding: 0 2rem;
+  border: 1px solid #eceff1;
+  border-top: none;
+}
+
+details a.details-title {
+  color: #000;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/forms/form.css.map */

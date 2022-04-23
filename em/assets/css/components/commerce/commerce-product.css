@@ -1,0 +1,67 @@
+.product-summary-wrapper .field--name-title {
+  margin-bottom: .5rem;
+  font-size: 1.333rem;
+  font-weight: 300;
+}
+
+.product-summary-wrapper .field--name-price {
+  margin-bottom: .5rem;
+  color: #000;
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+.product-summary-wrapper .field--name-field-summary {
+  margin-bottom: 2rem;
+}
+
+.product-summary-wrapper .field--name-variations .form-submit {
+  display: block;
+}
+
+.product-summary-wrapper form.commerce-order-item-add-to-cart-form {
+  display: flex;
+  align-items: stretch;
+}
+
+.product-summary-wrapper form.commerce-order-item-add-to-cart-form input {
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+}
+
+.product-summary-wrapper form.commerce-order-item-add-to-cart-form .field--name-quantity {
+  flex: 0 0 80px;
+  margin-right: 1rem;
+}
+
+@media (min-width: 992px) {
+  .product-summary-wrapper form.commerce-order-item-add-to-cart-form .field--name-quantity {
+    flex: 0 0 100px;
+  }
+}
+
+.product-summary-wrapper form.commerce-order-item-add-to-cart-form .field--name-quantity label {
+  display: none;
+}
+
+.product-summary-wrapper form.commerce-order-item-add-to-cart-form .form-actions {
+  flex: 1;
+}
+
+.product-summary-wrapper form.commerce-order-item-add-to-cart-form .form-actions input {
+  width: 100%;
+}
+
+.product-summary-wrapper .field--name-field-category {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #cfd8dc;
+}
+
+.product-summary-wrapper .field--name-field-summary,
+.product-summary-wrapper .field--name-body,
+.product-summary-wrapper .field--name-field-additional-informations {
+  color: #546e7a;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/commerce/commerce-product.css.map */

@@ -1,0 +1,208 @@
+.tabs {
+  padding-top: 40px;
+  border: 1px solid #eceff1;
+  border-radius: .25rem;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .tabs {
+    padding-top: 0;
+    border: none;
+    border-radius: 0;
+  }
+}
+
+ul.primary,
+ul.secondary {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+}
+
+.btn-tabs-toggler {
+  background-color: #eceff1;
+  display: block;
+  width: 20%;
+  height: 40px;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media (min-width: 992px) {
+  .btn-tabs-toggler {
+    display: none;
+  }
+}
+
+.tabs ul.primary,
+.tabs ul.secondary {
+  background-color: #eceff1;
+  display: block;
+  margin-top: -1px;
+  border: 0;
+  border-radius: .25rem;
+  position: static;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.tabs ul.primary.active,
+.tabs ul.secondary.active {
+  max-height: 999rem;
+}
+
+@media (min-width: 992px) {
+  .tabs ul.primary,
+  .tabs ul.secondary {
+    background-color: transparent;
+    display: flex;
+    max-height: none;
+    align-items: baseline;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid #cfd8dc;
+    overflow: visible;
+  }
+}
+
+.tabs ul.primary > li,
+.tabs ul.secondary > li {
+  display: block;
+  margin: 0;
+  font-size: 80%;
+}
+
+.tabs ul.primary > li.is-active,
+.tabs ul.secondary > li.is-active {
+  width: 80%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (min-width: 992px) {
+  .tabs ul.primary > li.is-active,
+  .tabs ul.secondary > li.is-active {
+    width: auto;
+    position: static;
+  }
+}
+
+.tabs ul.primary > li a,
+.tabs ul.secondary > li a {
+  display: block;
+  background: transparent;
+  height: 40px;
+  padding: 0 1.5rem;
+  border-top: 1px solid #FFF;
+  color: #546e7a;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: left;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+}
+
+@media (min-width: 992px) {
+  .tabs ul.primary > li a,
+  .tabs ul.secondary > li a {
+    height: auto;
+    line-height: 1rem;
+    margin-bottom: -2px;
+    padding: .5rem 1rem;
+    border: none;
+    border-bottom: 3px solid transparent;
+    text-align: center;
+  }
+}
+
+.tabs ul.primary > li a:hover,
+.tabs ul.secondary > li a:hover {
+  color: #263238;
+  border-bottom-color: #263238;
+}
+
+.tabs ul.primary > li.is-active a,
+.tabs ul.secondary > li.is-active a {
+  color: #000;
+  font-weight: bold;
+  border-top: none;
+}
+
+@media (min-width: 992px) {
+  .tabs ul.primary > li.is-active a,
+  .tabs ul.secondary > li.is-active a {
+    border-bottom-color: #263238;
+  }
+}
+
+.region-tabs,
+.block-region-tabs {
+  position: relative;
+}
+
+.region-tabs .tabs,
+.block-region-tabs .tabs {
+  margin-left: -9999rem;
+  margin-right: -9999rem;
+  padding-left: 9999rem;
+  padding-right: 9999rem;
+  position: static;
+  border-left: none;
+  border-top: none;
+  position: static;
+}
+
+.region-tabs .tabs ul.primary,
+.region-tabs .tabs ul.secondary,
+.block-region-tabs .tabs ul.primary,
+.block-region-tabs .tabs ul.secondary {
+  margin-left: -9999rem;
+  margin-right: -9999rem;
+  padding-left: 9999rem;
+  padding-right: 9999rem;
+  position: static;
+  justify-content: center;
+}
+
+.region-tabs .tabs ul.primary > li,
+.region-tabs .tabs ul.secondary > li,
+.block-region-tabs .tabs ul.primary > li,
+.block-region-tabs .tabs ul.secondary > li {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.region-tabs .tabs ul.primary > li a,
+.region-tabs .tabs ul.secondary > li a,
+.block-region-tabs .tabs ul.primary > li a,
+.block-region-tabs .tabs ul.secondary > li a {
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .region-tabs .tabs ul.primary > li a,
+  .region-tabs .tabs ul.secondary > li a,
+  .block-region-tabs .tabs ul.primary > li a,
+  .block-region-tabs .tabs ul.secondary > li a {
+    padding: .7rem 1.5rem;
+  }
+}
+
+.region-tabs .tabs ul.secondary,
+.block-region-tabs .tabs ul.secondary {
+  background-color: transparent;
+}
+
+.region-tabs .tabs ul.secondary li a,
+.block-region-tabs .tabs ul.secondary li a {
+  padding: 1rem 1.5rem;
+  text-transform: none;
+  border-bottom: none;
+}
+
+/*# sourceMappingURL=../../sourcemaps/components/administration/tabs.css.map */

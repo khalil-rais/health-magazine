@@ -1,0 +1,10 @@
+.paragraph--type--quote {
+  color: #000;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=../../sourcemaps/content/paragraphs/paragraph--quote.css.map */

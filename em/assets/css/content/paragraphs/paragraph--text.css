@@ -1,0 +1,61 @@
+.paragraph--type--text {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .paragraph--type--text {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+}
+
+.paragraph--type--text > h1, .paragraph--type--text > h2, .paragraph--type--text > h3, .paragraph--type--text > h4, .paragraph--type--text > h5, .paragraph--type--text > h6 {
+  margin: 2.2rem 0 .8rem;
+  font-weight: 500;
+  line-height: 1.24;
+}
+
+.paragraph--type--text p {
+  margin: 0rem 0 1.8rem;
+}
+
+.paragraph--type--text p:last-child {
+  margin-bottom: 0;
+}
+
+.paragraph--type--text p.dropcaps:first-letter {
+  display: block;
+  float: left;
+  padding: 15px 10px 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.paragraph--type--text a {
+  color: #7b1fa2;
+  text-decoration: underline;
+}
+
+.paragraph--type--text a:hover {
+  color: rgba(123, 31, 162, 0.7);
+  text-decoration: underline;
+}
+
+.paragraph--type--text .lead {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.paragraph--type--text hr {
+  width: 45%;
+  margin: 2rem auto;
+  border-top: 4px dotted #ce93d8;
+}
+
+/*# sourceMappingURL=../../sourcemaps/content/paragraphs/paragraph--text.css.map */

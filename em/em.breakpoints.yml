@@ -1,0 +1,31 @@
+em.xs:
+  label: 'Extra small devices'
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+em.sm:
+  label: 'Small devices'
+  mediaQuery: 'all and (min-width: 576px)'
+  weight: 1
+  multipliers:
+    - 1x
+em.md:
+  label: 'Medium devices'
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 2
+  multipliers:
+    - 1x
+em.lg:
+  label: 'Large devices'
+  mediaQuery: 'all and (min-width: 992px)'
+  weight: 3
+  multipliers:
+    - 1x
+em.xl:
+  label: 'Extra large devices'
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 4
+  multipliers:
+    - 1x
+

@@ -1,0 +1,48 @@
+/* ---------- Color Module Styles ----------- */
+
+.channel--boxed:before {
+  background: #7b1fa2;
+}
+
+.channel--bordered {
+  border-left-color: #7b1fa2;
+}
+
+.teaser--compact.is--highlighted:before {
+  background: #7b1fa2!important;
+}
+
+/*
+ * Primary Button
+ */
+.button--primary {
+  background-color: #263238!important;
+  border-color: #263238!important;
+}
+  .button--primary:hover {
+    background-color: #7b1fa2!important;
+    border-color: #7b1fa2!important;
+  }
+  
+/* 
+ * Article text & links
+ */
+.paragraph--type--text {
+  color: #263239!important;
+}
+  .paragraph--type--text a,
+  .paragraph--type--text a:hover {
+    color: #7b1fa3!important;
+  }
+
+/*
+* Poll
+*/
+
+.poll__choice__percent {
+  color: #7b1fa2;
+}
+
+.poll .bar .foreground {
+  background-color: #7b1fa2;
+}
